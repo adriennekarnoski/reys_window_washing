@@ -1,0 +1,89 @@
+
+/*layout.css: Controls the flow and structure of pages throughout the site*/
+
+
+
+.page {
+    min-height: 100vh;
+    width: 80%;
+    margin-left: 20%;
+    font-family: 'Glegoo', serif;
+}
+
+.container {
+    width: 100%;
+}
+
+.content {
+    width: 80%;
+    margin: auto;
+    padding: 5% 0%;
+}
+
+.one {
+    width: 90%;
+    margin: auto;
+}
+
+.two_even {
+    width: 50%;
+}
+
+.two_small {
+    width: 30%;
+}
+
+.two_big {
+    width: 70%;
+}
+
+.three {
+    width: 33%;
+}
+
+.four {
+    width: 25%;
+}
+
+.five {
+    width: 20%;
+}
+
+/*floats*/
+
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/*navigation*/
+
+nav {
+    height: 100vh;
+    position: fixed;
+    width: 20%;
+    background: #0e0e0b;
+    color: white;
+    font-family: 'Glegoo', serif;
+}
+
+/*home*/
+
+.home_background {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+
+

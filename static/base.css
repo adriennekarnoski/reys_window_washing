@@ -1,0 +1,73 @@
+
+/*base.css: Controls the style of elements throughout the site*/
+
+/*background colors*/
+
+.white {
+    background: #f5f5f5;
+}
+
+.teal {
+    background: #356764;
+    color: white;
+}
+
+.gray {
+    background: #1d1d1d;
+    color: white;
+}
+
+.light_gray {
+    background: #9999a2;
+}
+/*elements*/
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    font-size: 16px;
+    margin: auto;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+/*text*/
+
+.heading {
+    font-family: 'Amatic SC';
+    font-size: 2.3em;
+    font-weight: bolder;
+    padding-bottom: 2%;
+}
+
+.sub_heading {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.text_teal {
+    color: #68b1ac;
+}
+
+.text_gray {
+    color: #1d1d1d
+}
+
+p {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    padding-top: 5%;
+}
