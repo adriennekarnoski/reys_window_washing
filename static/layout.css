@@ -2,6 +2,60 @@
 /*layout.css: Controls the flow and structure of pages throughout the site*/
 
 
+/*navigation*/
+
+nav {
+    height: 100vh;
+    position: fixed;
+    width: 20%;
+    background: #0e0e0b;
+    color: white;
+    font-family: 'Glegoo', serif;
+}
+
+.logo {
+    max-width: 200px;
+    margin: auto;
+    display: block;
+    padding-top: 5%;
+}
+
+.nav_list {
+    padding-top: 15%;
+    text-align: center;
+}
+
+.nav_list li, .nav_list a {
+    padding: 6% 0%;
+    color: white;
+}
+
+.icon_span {
+   width: 50px;
+   text-align: center;
+   display: inline-block; 
+}
+
+.nav_icons {
+    text-align: center;
+    padding-top: 55%;
+}
+
+.nav_icons li {
+    display: inline-block;
+}
+
+.nav_icons a {
+    color: #68b1ac;
+}
+
+.nav_contact {
+    font-size: 12px;
+}
+
+.nav_contact li, .nav_icons li {
+    padding: 1% 0%;
+}
 
 .page {
     min-height: 100vh;
@@ -65,16 +119,7 @@
     float: right;
 }
 
-/*navigation*/
 
-nav {
-    height: 100vh;
-    position: fixed;
-    width: 20%;
-    background: #0e0e0b;
-    color: white;
-    font-family: 'Glegoo', serif;
-}
 
 /*home*/
 

@@ -4,53 +4,6 @@
 /*Controls specific elements on differrent pages*/
 
 
-/*navigation*/
-
-
-.logo {
-    max-width: 200px;
-    margin: auto;
-    display: block;
-    padding-top: 5%;
-}
-
-.nav_list {
-    padding-top: 15%;
-    text-align: center;
-}
-
-.nav_list li {
-    padding: 6% 0%;
-}
-
-.icon_span {
-   width: 50px;
-   text-align: center;
-   display: inline-block; 
-}
-
-.nav_icons {
-    text-align: center;
-    padding-top: 55%;
-}
-
-.nav_icons li {
-    display: inline-block;
-    padding: 1% 0%;
-}
-
-.nav_icons a {
-    color: #68b1ac;
-}
-
-.nav_contact {
-    font-size: 12px;
-}
-
-.nav_contact li {
-    padding: 1% 0%;
-}
-
 /*home*/
 
 
@@ -150,12 +103,47 @@
     padding-top: 5%;
 }*/
 
-.getting_started h4 {
-    padding-top: 5%;
-    padding-bottom: 10%;
+.getting_started h2, .getting_started h3 {
+    padding-left: 5%;
 }
+
+.getting_started h2 {
+    padding-top: 5%;
+}
+
 .getting_started p {
     width: 80%;
     margin: auto;
     padding: 5% 0%;
+}
+
+.getting_started section {
+    overflow: hidden;
+}
+
+.getting_started article {
+    height: 200px;
+}
+
+
+/*services*/
+
+.services_container {
+    padding-top: 10%;
+}
+
+.services_content {
+    width: 80%;
+    margin: auto;
+    height: 60vh;
+}
+
+.services_content article {
+    border-top: solid 5px #68b1ac;
+    padding-bottom: 10%;
+}
+
+.services_content article h3 {
+    font-size: 1.7em;
+    padding-top: 2%;
 }

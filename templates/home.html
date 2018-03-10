@@ -7,7 +7,7 @@
         <article class="home_overlay">
             <h1>superior service. quality relationships.</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum purus nibh, ac varius lorem iaculis consectetur. Proin eu arcu sollicitudin, pellentesque ligula sed, cursus felis. Duis eleifend eros eu dui mattis tincidunt.</p>
-            <a href="#" class="button teal">View Services</a>
+            <a href="{{ url_for('services') }}" class="button teal">View Services</a>
         </article>
     </section>
     
@@ -24,7 +24,7 @@
         <article class="two_even right home_contact">
             <section>
                 <h2>GET IN CONTACT</h2>
-                <p class="text_center">Have a question or would like to know more? Send us a message! If you're ready to get started, <a href="#">request a personalized quote! <i class="fas fa-angle-right"></i></a></p>
+                <p class="text_center">Have a question or would like to know more? Send us a message! If you're ready to get started, <a href="{{ url_for('contact') }}">request a personalized quote! <i class="fas fa-angle-right"></i></a></p>
                 <form>
                     <input type="text" placeholder="Name">
                     <input type="text" placeholder="Phone Number or Email Address">
@@ -66,31 +66,57 @@
         </article>     
     </section>
 
-    <section class="container white clearfix getting_started">
-        <article class="content">
-            <section class="three left">
-                <article class="content">
-                    <h2 class="sub_heading">This is a sub heading</h2>
-                    <h3 class="heading">Get started</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum purus nibh, ac varius lorem iaculis consectetur.</p>
-                    <a href="#" class="button light_gray">Get A Quote</a>
-                </article>
-            </section>
-            <section class="three left teal text_center">
-                <article class="content">
-                    <h4 class="heading">Services</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum purus nibh, ac varius lorem iaculis consectetur.</p>
-                    <a href="#" class="link text_gray">Read Reviews <i class="fas fa-angle-right"></i></a>
-                </article>
-            </section>
-            <section class="three left teal text_center">
-                <article class="content">
-                    <h4 class="heading">Discounts</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum purus nibh, ac varius lorem iaculis consectetur.</p>
-                    <a href="#" class="link text_gray">Read Reviews <i class="fas fa-angle-right"></i></a>
-                </article>
-            </section>
-        </article>
+    <section class="container white clearfix getting_started"> 
+        <section class="three left">
+            <img src="/static/window.jpg">
+        </section>
+        <section class="three left">
+            
+                <h2 class="sub_heading text_teal">This is a sub heading</h2>
+                <h3 class="heading">Get started</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum purus nibh, ac varius lorem iaculis consectetur.</p>
+                <ul class="nav_contact">
+                  <li>
+                    <span class="icon_span"><i class="fas fa-mobile-alt fa-2x"></i></span>
+                    916.540.8373
+                  </li>
+                  <li>
+                    <span class="icon_span"><i class="far fa-envelope fa-2x"></i></span>
+                    reyswindowwashing@gmail.com
+                  </li> 
+                  <li>
+                    <span class="icon_span"><i class="fab fa-facebook-square fa-2x"></i></span>
+                    facebook.com/ReysWindowWashing
+                  </li> 
+                  <li>
+                    <span class="icon_span"><i class="fas fa-map-marker-alt fa-2x"></i></span>
+                    400 19th St Sacramento, CA 95811
+                  </li>
+                  <li>
+                    <span class="icon_span"><i class="far fa-clock fa-2x"></i></span>
+                    5:00PM - 9:00PM
+                  </li>
+                </ul>
+                <a href="{{ url_for('contact') }}" class="button gray">Get A Quote</a>
+            
+        </section>
+        <section class="three left">
+            <article class="one left">
+                <h2 class="sub_heading text_teal">This is a sub heading</h2>
+                <h3 class="heading">Services</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum purus nibh, ac varius lorem iaculis consectetur.</p>
+                <a href="{{ url_for('services') }}" class="link text_gray">View All Services</a>
+            </article>
+            <article class="one left">
+                <h2 class="sub_heading text_teal">This is a sub heading</h2>
+                <h3 class="heading">Discounts</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum purus nibh, ac varius lorem iaculis consectetur.</p>
+                <a href="{{ url_for('discounts') }}" class="link text_gray">View All Discounts</a>
+            </article>
+        </section>
     </section>
+            
+     
+
 </section>
 {% endblock %}
