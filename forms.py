@@ -6,7 +6,8 @@ from wtforms.widgets import TextArea
 
 class ContactForm(FlaskForm):
     name = StringField('name', validators=[DataRequired()])
-    contact = StringField('contact', validators=[DataRequired()])
+    email = StringField('email', validators=[DataRequired()])
+    phone = StringField('phone', validators=[DataRequired()])
     subject = StringField('subject', validators=[DataRequired()])
     message = StringField(
         'message',

@@ -117,15 +117,24 @@
     padding: 5% 0%;
 }
 
-.getting_started section {
+.getting_started {
     overflow: hidden;
+    height: 300px;
 }
 
 .getting_started article {
-    height: 200px;
+    padding: 30px;
 }
 
+.process_icons p {
+    width: 80%;
+    margin: auto;
+    padding-top: 5%;
+}
 
+.flaticon-holidays {
+    font-size: 24px;
+}
 /*services*/
 
 .services_container {
@@ -167,6 +176,16 @@
 
 /*contact*/
 
+.contact_container {
+    padding-top: 10%;
+}
+
+.con_tent {
+    width: 80%;
+    margin: auto;
+    height: 60vh;
+}
+
 .tab {
     overflow: hidden;
     /*border: 1px solid #ccc;*/
@@ -203,23 +222,65 @@
     border-top: none;
 }
 
-#contact_container form {
-    margin-left: 10%;
-}
-
 .tabcontent h2, .tabcontent h3 {
     padding-left: 10%;
 }
 
 .tabcontent h4 {
     border-bottom: solid 5px #68b1ac;
-    width: 90%;
+    width: 95%;
     padding: 1% 0%;
     margin-bottom: 2%;
     font-size: 14px;
 }
 
-.tabcontent textarea {
+.tabcontent li .fa-2x {
+    padding-top: 3%;
+    color: #68b1ac;
+}
+
+.tabcontent h2 {
+    padding-top: 5%;
+}
+
+.tabcontent input[type=submit] {
+    color: #ccc;
+    text-transform: uppercase;
+    font-family: 'Amatic SC';
+    background: none;
+    border: none;
+    font-weight: bolder;
+    font-size: 26px;
+    padding: 12px;
+    margin: 6px; 
+}
+
+.submit_span {
+    margin-right: 10%;
+    display: inline-block;
+}
+
+.submit_span .fa-lg {
+    padding-bottom: 4%;
+    color: #68b1ac;
+}
+
+
+/*contact container*/
+
+.tabcontent form {
+    margin-left: 10%;
+}
+
+#contact_container input[type=text] {
+    width: 85%;
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    margin: 6px; 
+}
+
+#contact_container textarea {
     width: 85%;
     height: 130px;
     padding: 12px;
@@ -228,21 +289,38 @@
     margin: 6px; 
 }
 
-select {
-    width: 95%;
-    height: 40px;
+/*quote container*/
+
+.half_input input[type=text] {
+    width: 39%;
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    margin: 6px 3px 6px 6px; 
+}
+
+.full_input input[type=text] {
+    width: 85%;
     padding: 12px;
     border: 1px solid #ccc; 
     border-radius: 4px;
     margin: 6px; 
 }
 
-.tabcontent li .fa-2x {
-    padding-top: 3%;
+#quote_container textarea {
+    width: 85%;
+    height: 45px;
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    margin: 6px; 
 }
 
-.tabcontent input[type=submit] {
-    color: red;
-    background: none;
-    border: none;
+select {
+    width: 44%;
+    height: 40px;
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    margin: 6px; 
 }
