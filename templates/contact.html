@@ -4,14 +4,97 @@
 {% block content %}
 <section class="page gray services_container">
 
-    <article class="services_content clearfix">
-        <section class="two_small left content">
-            <h2 class="sub_heading">This is a sub heading</h2>
-            <h3 class="heading">Introduction to the business</h3>
-        </section>
-        <section class="two_big right">
+    <article class="services_content">
+
+        <div class="tab">
+          <button class="tablinks" id="contact">Contact</button>
+          <button class="tablinks" id="quote">Quote</button>
+        </div>
+
+        <div id="contact_container" class="tabcontent">
+            <section class="clearfix">
+                <section class="two_small left">
+                    <h2 class="sub_heading">This is a sub heading</h2>
+                    <h3 class="heading">Introduction to the business</h3>
+                    <ul class="nav_contact">
+                      <li class="text_center"><i class="fas fa-mobile-alt fa-2x"></i></li>
+                      <li class="text_center">916.540.8373</li>
+                      <li class="text_center"><i class="far fa-envelope fa-2x"></i></li>
+                      <li class="text_center">reyswindowwashing@gmail.com</li>
+                      <li class="text_center"><i class="fab fa-facebook-square fa-2x"></i></li>
+                      <li class="text_center">facebook.com/ReysWindowWashing</li>
+                      <li class="text_center"><i class="fab fa-instagram fa-2x"></i></li>
+                      <li class="text_center">@reyswindowwashing</li>
+                    </ul>
+                </section>
+                <section class="two_big right">
+
+                      <form method="POST" action="">
+                      {{ contact_form.csrf_token }}
+                      <h4>Personal Information:</h4>
+                      {{ contact_form.name(placeholder="Full Name")}}
+                      {{ contact_form.contact(placeholder="Phone or Email") }}
+                      {{ contact_form.subject(placeholder="Subject") }}
+                      {{ contact_form.message(placeholder="Your message...", class="message_input") }}
+                        <input type="submit" value="Send">
+                        </form>
+                    </section>
+                </section>
+            </div>
+
+        <div id="quote_container" class="tabcontent">
+            <section class="clearfix">
+                <section class="three left">
+                    <h2 class="sub_heading">This is a sub heading</h2>
+                    <h3 class="heading">Introduction to the business</h3>
+                    <ul class="nav_contact">
+                      <li class="text_center"><i class="fas fa-mobile-alt fa-2x"></i></li>
+                      <li class="text_center">916.540.8373</li>
+                      <li class="text_center"><i class="far fa-envelope fa-2x"></i></li>
+                      <li class="text_center">reyswindowwashing@gmail.com</li>
+                      <li class="text_center"><i class="fab fa-facebook-square fa-2x"></i></li>
+                      <li class="text_center">facebook.com/ReysWindowWashing</li>
+                      <li class="text_center"><i class="fab fa-instagram fa-2x"></i></li>
+                      <li class="text_center">@reyswindowwashing</li>
+                    </ul>
+                </section>
+                <form method="POST" action="">
+                    {{ quote_form.csrf_token }}
+                <section class="three left">
+                    <h4>Personal Information:</h4>
+                      {{ quote_form.name(placeholder="Full Name")}}
+                      {{ quote_form.phone(placeholder="Phone Number") }}
+                     {#  {{ quote_form.email(placeholder="Email Address") }} #}
+                      {{ quote_form.message(placeholder="(Optional) Additional information...", class="message_input") }}
+              
+                </section>
+                <section class="three right">
+                    <h4>Company Information</h4>
+                      {{ quote_form.company(placeholder="Company Name") }}
+                      {{ quote_form.location(placeholder="City") }}
+                      {{ quote_form.floors(placeholder="Number of Floors") }}
+                      {{ quote_form.building }}
+                    </section>
+                <span><input type="submit" value="Send"><i class="fas fa-angle-right"></i></span>
+                </form>
+                </section>
+              {# <form method="POST" action="">
+              {{ quote_form.csrf_token }}
+              <h4>Personal Information:</h4>
+              {{ quote_form.name(placeholder="Full Name")}}
+              {{ quote_form.phone(placeholder="Phone Number", class="phone") }}
+              {{ quote_form.email(placeholder="Email Address") }}
+              {{ quote_form.message(placeholder="(Optional) Additional information...", class="message_input") }}
+              <h4>Company Information</h4>
+              {{ quote_form.company(placeholder="Company Name") }}
+              {{ quote_form.location(placeholder="City") }}
+              {{ quote_form.floors(placeholder="Number of Floors") }}
+              {{ quote_form.building }}
+                <input type="submit" value="Send" class="button teal">
+                </form> #}
+            </div>
             
-        </section>
+    
     </article>
 
 

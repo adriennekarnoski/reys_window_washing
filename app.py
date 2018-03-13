@@ -1,6 +1,9 @@
 from flask import Flask, render_template, request, redirect, url_for
+from forms import ContactForm, QuoteForm
+import os
 
 app = Flask(__name__)
+app.secret_key = os.environ.get('SECRET_KEY')
 
 
 @app.route('/')
@@ -23,6 +26,17 @@ def discounts():
     return render_template('discounts.html')
 
 
-@app.route('/contact')
+@app.route('/contact', methods=['GET', 'POST'])
 def contact():
-    return render_template('contact.html')
+    quote_form = QuoteForm()
+    contact_form = ContactForm()
+    if request.method == 'POST':
+        if contact_form.validate():
+            return redirect(url_for('done'))
+        elif quote_form.validate():
+            return redirect(url_for('done'))
+    return render_template('contact.html', quote_form=quote_form, contact_form=contact_form)
+
+@app.route('/done')
+def done():
+    return render_template('done.html')
