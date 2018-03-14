@@ -41,7 +41,7 @@ nav {
     padding-top: 55%;
 }
 
-.nav_icons li {
+.nav_icons li, .footer_icons li {
     display: inline-block;
 }
 
@@ -55,6 +55,38 @@ nav {
 
 .nav_contact li, .nav_icons li {
     padding: 1% 0%;
+}
+
+footer {
+    width: 70%;
+    padding: 5%;
+    margin-left: 20%;
+    background: #1d1d1d;
+    color: #ccc;
+}
+
+footer p {
+    width: 80%;
+    font-family: 'Glegoo', serif;
+    font-size: 12px;
+}
+
+footer h3 {
+    font-family: 'Amatic SC';
+    font-size: 24px;
+}
+
+.created_by {
+    padding: 3% 0%;
+    text-align: center;
+    border-top: solid 3px #333333;
+    margin-top: 10px;
+    font-family: 'Glegoo', serif;
+    font-size: 12px;
+}
+
+.created_by a {
+    color: #68b1ac;
 }
 
 .page {

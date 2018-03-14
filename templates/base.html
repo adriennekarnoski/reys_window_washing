@@ -26,10 +26,10 @@
     <img src="/static/logo.png" class="logo">
     <ul class="nav_list">
       <li><a href="{{ url_for('home') }}" id="home">HOME</a></li>
+      <li><a href="{{ url_for('about') }}" id="about">ABOUT REY</a></li>
       <li><a href="{{ url_for('services') }}" id="services">SERVICES</a></li>
-      <li><a href="{{ url_for('about') }}" id="about">ABOUT</a></li>
       <li><a href="{{ url_for('discounts') }}" id="discounts">DISCOUNTS</a></li>
-      <li><a href="{{ url_for('contact') }}" id="contact">CONTACT</a></li>
+      <li><a href="{{ url_for('contact') }}" id="contact">REQUEST A QUOTE</a></li>
     </ul>
     <ul class="nav_icons">
       <li>
@@ -38,7 +38,7 @@
         </a>
       </li>
       <li>
-        <a href="#" class="icon_span">
+        <a href="https://www.instagram.com/reyswindowwashing/" class="icon_span">
           <i class="fab fa-instagram fa-2x"></i>
         </a>
       </li>
@@ -67,6 +67,43 @@
   <main>
     {% block content %} {% endblock %}
   </main>
+  <footer>
+    <section class="container clearfix">
+      <article class="two_big left">
+        <h3>Rey's Window Washing</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum purus nibh, ac varius lorem iaculis consectetur. Proin eu arcu sollicitudin,</p>
+      </article>
+      <article class="two_small right"> 
+        <ul class="nav_contact">
+          <li>
+            <span class="icon_span"><i class="fas fa-mobile-alt"></i></span>
+        916.540.8373
+          </li>  
+          <li>
+            <span class="icon_span"><i class="far fa-envelope"></i></span>
+            reyswindowwashing@gmail.com
+          </li>
+            <li>
+            <span class="icon_span"><i class="fab fa-facebook-square"></i></span>
+            facebook.com/ReysWindowWashing/
+          </li>  
+          <li>
+            <span class="icon_span"><i class="fab fa-instagram"></i></span>
+            @ReysWindowWashing
+          </li>
+          <li>
+            <span class="icon_span"><i class="far fa-clock"></i></span>
+            5:00PM - 9:00PM
+          </li>
+        </ul>
+      </article>
+    </section>
+    <section class="container clearfix">
+      <article class="created_by">
+        <h4>Website created by <a href="adriennekarnoski.com">Adrienne Karnoski</a></h4>
+      </article>
+    </section>
+  </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
