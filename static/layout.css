@@ -2,8 +2,6 @@
 /*layout.css: Controls the flow and structure of pages throughout the site*/
 
 
-/*navigation*/
-
 nav {
     height: 100vh;
     position: fixed;
@@ -11,50 +9,6 @@ nav {
     background: #0e0e0b;
     color: white;
     font-family: 'Glegoo', serif;
-}
-
-.logo {
-    max-width: 200px;
-    margin: auto;
-    display: block;
-    padding-top: 5%;
-}
-
-.nav_list {
-    padding-top: 15%;
-    text-align: center;
-}
-
-.nav_list li, .nav_list a {
-    padding: 6% 0%;
-    color: white;
-}
-
-.icon_span {
-   width: 50px;
-   text-align: center;
-   display: inline-block; 
-}
-
-.nav_icons {
-    text-align: center;
-    padding-top: 55%;
-}
-
-.nav_icons li, .footer_icons li {
-    display: inline-block;
-}
-
-.nav_icons a {
-    color: #68b1ac;
-}
-
-.nav_contact {
-    font-size: 12px;
-}
-
-.nav_contact li, .nav_icons li {
-    padding: 1% 0%;
 }
 
 footer {
@@ -65,29 +19,8 @@ footer {
     color: #ccc;
 }
 
-footer p {
-    width: 80%;
-    font-family: 'Glegoo', serif;
-    font-size: 12px;
-}
+/*page classes*/
 
-footer h3 {
-    font-family: 'Amatic SC';
-    font-size: 24px;
-}
-
-.created_by {
-    padding: 3% 0%;
-    text-align: center;
-    border-top: solid 3px #333333;
-    margin-top: 10px;
-    font-family: 'Glegoo', serif;
-    font-size: 12px;
-}
-
-.created_by a {
-    color: #68b1ac;
-}
 
 .page {
     min-height: 100vh;
@@ -105,6 +38,14 @@ footer h3 {
     margin: auto;
     padding: 10% 0%;
 }
+
+.padding {
+    padding: 5% 0%;
+}
+
+
+/*container flow*/
+
 
 .one {
     width: 90%;
@@ -135,7 +76,9 @@ footer h3 {
     width: 20%;
 }
 
+
 /*floats*/
+
 
 .clearfix {
     content: "";
@@ -161,13 +104,7 @@ footer h3 {
     height: 500px;
 }
 
-.process_icons {
-    width: 80%;
-    margin: auto;
-    padding: 5% 10%;
-}
 
-.padding {
-    padding: 3% 0%;
-}
+
+
 
