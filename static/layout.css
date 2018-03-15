@@ -103,7 +103,7 @@ footer h3 {
 .content {
     width: 80%;
     margin: auto;
-    padding: 5% 0%;
+    padding: 10% 0%;
 }
 
 .one {
@@ -165,5 +165,9 @@ footer h3 {
     width: 80%;
     margin: auto;
     padding: 5% 10%;
+}
+
+.padding {
+    padding: 3% 0%;
 }
 

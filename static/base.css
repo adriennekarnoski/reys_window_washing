@@ -53,8 +53,19 @@
     text-transform: uppercase;
 }
 
+.semi_heading {
+    display: inline-block;
+    font-family: 'Amatic SC';
+    font-size: 2em;
+    font-weight: bolder;
+}
+
 .text_center {
     text-align: center;
+}
+
+.text_right {
+    text-align: right;
 }
 
 .text_teal {
@@ -63,6 +74,10 @@
 
 .text_gray {
     color: #1d1d1d;
+}
+
+.text_light_gray {
+    color: #d9d9d9;
 }
 
 p {

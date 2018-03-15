@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 13/03/2018 21:50
+    Creation date: 15/03/2018 03:13
     */
 
     @font-face {
@@ -36,16 +36,20 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-holidays:before { content: "\f100"; }
-.flaticon-house:before { content: "\f101"; }
-.flaticon-glass:before { content: "\f102"; }
-.flaticon-cleaning:before { content: "\f103"; }
-.flaticon-bubble:before { content: "\f104"; }
-.flaticon-mop:before { content: "\f105"; }
+    .flaticon-broom:before { content: "\f100"; }
+.flaticon-quality:before { content: "\f101"; }
+.flaticon-holidays:before { content: "\f102"; }
+.flaticon-house:before { content: "\f103"; }
+.flaticon-glass:before { content: "\f104"; }
+.flaticon-cleaning:before { content: "\f105"; }
+.flaticon-bubble:before { content: "\f106"; }
+.flaticon-mop:before { content: "\f107"; }
     
-    $font-Flaticon-holidays: "\f100";
-    $font-Flaticon-house: "\f101";
-    $font-Flaticon-glass: "\f102";
-    $font-Flaticon-cleaning: "\f103";
-    $font-Flaticon-bubble: "\f104";
-    $font-Flaticon-mop: "\f105";
+    $font-Flaticon-broom: "\f100";
+    $font-Flaticon-quality: "\f101";
+    $font-Flaticon-holidays: "\f102";
+    $font-Flaticon-house: "\f103";
+    $font-Flaticon-glass: "\f104";
+    $font-Flaticon-cleaning: "\f105";
+    $font-Flaticon-bubble: "\f106";
+    $font-Flaticon-mop: "\f107";
