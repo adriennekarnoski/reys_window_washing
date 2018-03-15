@@ -1,6 +1,15 @@
 
 /*layout.css: Controls the flow and structure of pages throughout the site*/
 
+main {
+    padding-top: 100px;
+}
+
+@media screen and (min-width: 640px) {
+    main {
+        padding-top: 0px;
+    }
+}
 
 nav {
     height: 100px;
@@ -115,30 +124,37 @@ footer {
     .one {
         width: 90%;
         margin: auto;
+        padding: 0%;
     }
 
     .two_even {
         width: 50%;
+        padding: 0%;
     }
 
     .two_small {
         width: 30%;
+        padding: 0%;
     }
 
     .two_big {
         width: 70%;
+        padding: 0%;
     }
 
     .three {
         width: 33%;
+        padding: 0%;
     }
 
     .four {
         width: 25%;
+        padding: 0%;
     }
 
     .five {
         width: 20%;
+        padding: 0%;
     }
 }
 
@@ -168,6 +184,7 @@ footer {
         float: right;
     }
 }
+
 /*home*/
 
 .home_background {

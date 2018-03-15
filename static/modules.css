@@ -95,9 +95,18 @@
         display: none;
     }
 
+    .nav_mobile {
+        background: #0e0e0b;
+        width: 100%;
+        display: block;
+        margin-top: 0px;
+        height: 50%;
+    }
+
     .nav_list {
         padding-top: 15%;
         text-align: center;
+        font-size: 14px;
     }
 
     .nav_list li, .nav_list a {
@@ -126,6 +135,7 @@
 
     .nav_contact {
         font-size: 12px;
+        padding-left: 0%;
     }
 
     .nav_contact li, .nav_icons li {
@@ -190,6 +200,7 @@
 
 @media screen and (min-width: 640px) {
     .home_contact {
+        display: inline-block;
         background: rgba(53, 103, 100, 0.8);
         width: 300px;
         color: white;
@@ -237,17 +248,6 @@
         margin: 6px; 
     }
 }
-
-/*.icon_teal .fa-4x {
-    color: #9999a2;
-    padding-bottom: 4%;
-}*/
-
-/*.icon_teal a {
-    color: #68b1ac;
-    text-decoration: none;
-    padding-top: 5%;
-}*/
 
 .process_icons {
     width: 80%;
@@ -347,6 +347,7 @@
     }
 
     .buildings .image {
+        display: inline-block;
         border-top: solid 5px #1d1d1d;
         border-bottom: solid 5px #1d1d1d;
     }
@@ -357,8 +358,6 @@
     }
 }
 
-
-
 .numbers h4 {
     display: inline-block;
     border: solid #68b1ac 2px;
@@ -366,7 +365,6 @@
     border-radius: 50%;
     margin: 20px 10px;
 }
-
 
 .numbers h5 {
     display: inline-block;
@@ -408,7 +406,6 @@
 
 .send_message form {
     padding: 10% 5%;
-
     background: #356764;
     border-radius: 12px;
 }
