@@ -24,6 +24,8 @@
 <body>
   <nav>
     <img src="/static/logo.png" class="logo">
+    <i class="fas fa-bars fa-4x" id="mobile_menu"></i>
+    <span class="nav_mobile">
     <ul class="nav_list">
       <li><a href="{{ url_for('home') }}" id="home">HOME</a></li>
       <li><a href="{{ url_for('about') }}" id="about">ABOUT REY</a></li>
@@ -62,7 +64,7 @@
         5:00PM - 9:00PM
       </li>
     </ul>
- 
+ </span>
   </nav>
   <main>
     {% block content %} {% endblock %}

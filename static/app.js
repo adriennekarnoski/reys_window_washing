@@ -20,3 +20,9 @@ $(document).ready(function(){
         console.log($('#' + active + '_container').siblings())
    })
 });
+
+$(document).ready(function(){
+    $('nav').on('click', '#mobile_menu', function() {
+        $('.nav_mobile').slideToggle();
+   })
+});
