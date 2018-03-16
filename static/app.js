@@ -25,7 +25,9 @@ $(document).ready(function(){
     if ($(window).width() < 640) {
         $('.nav_mobile').hide();
     }    
-    $('nav').on('click', '#mobile_menu', function() {
+    $('nav').on('click', '#mobile_open', function() {
+        $('#mobile_open').hide()
+        $('#mobile_close').show()
         $('.nav_mobile').slideToggle();
    })
 });
