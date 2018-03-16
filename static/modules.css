@@ -48,8 +48,6 @@
 @media screen and (min-width: 640px) {
     #mobile_open {
         display: none;
-        float: right;
-        padding: 5%;
     }
 }
 
@@ -62,12 +60,12 @@
 
 .nav_mobile {
     background: rgba(13, 13, 13, 0.9);
-    display: block;
+    display: none;
     z-index: 1;
     height: 100vh;
     width: 100%;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    position: fixed; 
+    z-index: 1;
     left: 0;
     top: 0;
 }
@@ -101,25 +99,28 @@
     .nav_list {
        position: absolute;
         top: 5%;
-
-
         font-size: 14px;
     }
 }
 
 .nav_contact {
     position: relative;
+    color: #ccc;
     top: 35%;
     font-size: 12px;
     padding-left: 20%;
 }
 
+.nav_contact ul li {
+    padding-left: 30%;
+}
+
 @media screen and (min-width: 640px) {
     .nav_contact {
         position: absolute;
-        font-size: 12px;
+        color: #ccc;
         padding-left: 0%;
-        top: 70%;
+        top: 64%;
     }
 }
 
@@ -145,7 +146,7 @@
     .nav_icons {
         position: absolute;
         font-size: 12px;
-        top: 64%;
+        top: 58%;
     }
 }
 
@@ -255,6 +256,11 @@
     line-height: 18px;
 }
 
+.home_p a {
+    display: block;
+    padding-top: 0%;
+}
+
 @media screen and (min-width: 640px) {
     .home_p {
         padding: 5% 0% 0% 5%;
@@ -264,6 +270,37 @@
     }
 }
 
+.op_hours {
+    background: #d9d9d9;
+    padding: 3% 5%;
+    width: 80%;
+    margin: 10% 0% -10% 15%;
+}
+
+.op_hours h2 {
+    display: inline-block;
+    font-family: 'Amatic SC';
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin-left: 15%;
+    padding-top: 3%;
+}
+
+.op_hours p {
+    margin-left: 15%;
+    padding-bottom: 3%;
+}
+
+.op_hours .cal_icon {
+    margin: 5% 0%;
+    padding-top: 10%;
+}
+
+.op_hours .cal_hours {
+    margin-top: 3%;
+    width: 65%;
+    border-left: solid 3px #68b1ac;
+}
 /*home form*/
 
 .home_contact {
@@ -707,15 +744,6 @@ select {
     margin: 6px; 
 }
 
-.instagram {
-    overflow: hidden;
-    height: 300px;
-}
-
-.instagram_photo {
-    margin-top: -54px;
-}
-
 .quality {
     width: 90%;
     margin: auto;
@@ -727,18 +755,21 @@ select {
 .quality h2 {
     text-align: left;
     width: 30%;
+    color: #b3b3b3;
 }
 
 .quality section:first-child {
     width: 20%;
     float: left;
+    padding-left: 6%;
+    padding-top: 2%;
 }
 
 @media screen and (min-width: 640px) {
     .quality {
-        width: 45%;
+        width: 55%;
         margin: auto;
-        padding: 3% 0%;
+        padding: 3%;
         border: solid 5px #1d1d1d;
     }
 
@@ -772,6 +803,14 @@ footer h3 {
 
 .created_by a {
     color: #68b1ac;
+}
+
+.foot_contact {
+    font-size: 13px;
+}
+
+.foot_contact li {
+    padding: 1% 0%;
 }
 
 @media screen and (min-width: 640px) {
