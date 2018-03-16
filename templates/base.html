@@ -23,48 +23,60 @@
 </head>
 <body>
   <nav>
+    <span class="nav_mobile clearfix">
+      <i class="fas fa-times fa-4x" id="mobile_close"></i>
+      <ul class="nav_list">
+        <li><a href="{{ url_for('home') }}" id="home">HOME</a></li>
+        <li><a href="{{ url_for('about') }}" id="about">ABOUT REY</a></li>
+        <li><a href="{{ url_for('services') }}" id="services">SERVICES</a></li>
+        <li><a href="{{ url_for('discounts') }}" id="discounts">DISCOUNTS</a></li>
+        <li><a href="{{ url_for('contact') }}" id="contact">REQUEST A QUOTE</a></li>
+      </ul>
+      <ul class="nav_icons">
+        <li><a href="https://www.facebook.com/ReysWindowWashing/" class="icon_span">
+          <i class="fab fa-facebook-square fa-2x">
+          </i></a></li>
+        <li><a href="https://www.instagram.com/reyswindowwashing/" class="icon_span">
+            <i class="fab fa-instagram fa-2x">
+            </i></a></li>
+        <li><a href="mailto:reyswindowwashing@gmail.com" class="icon_span">
+            <i class="far fa-envelope-open fa-2x">
+            </i></a></li>   
+      </ul>
+      <ul class="nav_contact">
+        <li><span class="icon_span"><i class="fas fa-mobile-alt"></i></span>916.540.8373</li>  
+        <li><span class="icon_span"><i class="far fa-envelope"></i></span>reyswindowwashing@gmail.com</li>
+        <li><span class="icon_span"><i class="far fa-clock"></i></span>5:00PM - 9:00PM</li>
+      </ul>
+   </span>
     <img src="/static/logo.png" class="logo">
-    <i class="fas fa-bars fa-4x" id="mobile_menu"></i>
-    <span class="nav_mobile">
-    <ul class="nav_list">
-      <li><a href="{{ url_for('home') }}" id="home">HOME</a></li>
-      <li><a href="{{ url_for('about') }}" id="about">ABOUT REY</a></li>
-      <li><a href="{{ url_for('services') }}" id="services">SERVICES</a></li>
-      <li><a href="{{ url_for('discounts') }}" id="discounts">DISCOUNTS</a></li>
-      <li><a href="{{ url_for('contact') }}" id="contact">REQUEST A QUOTE</a></li>
-    </ul>
-    <ul class="nav_icons">
-      <li>
-        <a href="https://www.facebook.com/ReysWindowWashing/" class="icon_span">
-          <i class="fab fa-facebook-square fa-2x"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/reyswindowwashing/" class="icon_span">
-          <i class="fab fa-instagram fa-2x"></i>
-        </a>
-      </li>
-      <li>
-        <a href="mailto:reyswindowwashing@gmail.com" class="icon_span">
-          <i class="far fa-envelope-open fa-2x"></i>
-        </a>
-      </li>   
-    </ul>
-    <ul class="nav_contact">
-      <li>
-        <span class="icon_span"><i class="fas fa-mobile-alt"></i></span>
-        916.540.8373
-      </li>  
-      <li>
-        <span class="icon_span"><i class="far fa-envelope"></i></span>
-        reyswindowwashing@gmail.com
-      </li>
-      <li>
-        <span class="icon_span"><i class="far fa-clock"></i></span>
-        5:00PM - 9:00PM
-      </li>
-    </ul>
- </span>
+    <i class="fas fa-bars fa-4x" id="mobile_open"></i>
+
+    <span class="nav_desktop">
+      <ul class="nav_list">
+          <li><a href="{{ url_for('home') }}" id="home">HOME</a></li>
+          <li><a href="{{ url_for('about') }}" id="about">ABOUT REY</a></li>
+          <li><a href="{{ url_for('services') }}" id="services">SERVICES</a></li>
+          <li><a href="{{ url_for('discounts') }}" id="discounts">DISCOUNTS</a></li>
+          <li><a href="{{ url_for('contact') }}" id="contact">REQUEST A QUOTE</a></li>
+        </ul>
+        <ul class="nav_icons">
+          <li><a href="https://www.facebook.com/ReysWindowWashing/" class="icon_span">
+            <i class="fab fa-facebook-square fa-2x">
+            </i></a></li>
+          <li><a href="https://www.instagram.com/reyswindowwashing/" class="icon_span">
+              <i class="fab fa-instagram fa-2x">
+              </i></a></li>
+          <li><a href="mailto:reyswindowwashing@gmail.com" class="icon_span">
+              <i class="far fa-envelope-open fa-2x">
+              </i></a></li>   
+        </ul>
+        <ul class="nav_contact">
+          <li><span class="icon_span"><i class="fas fa-mobile-alt"></i></span>916.540.8373</li>  
+          <li><span class="icon_span"><i class="far fa-envelope"></i></span>reyswindowwashing@gmail.com</li>
+          <li><span class="icon_span"><i class="far fa-clock"></i></span>5:00PM - 9:00PM</li>
+        </ul>
+    </span>
   </nav>
   <main>
     {% block content %} {% endblock %}
@@ -107,7 +119,7 @@
     </section>
   </footer>
 
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 <script src="{{url_for('static', filename='app.js')}}"></script>
 

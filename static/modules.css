@@ -30,22 +30,30 @@
     padding: 3%;
 }
 
-#mobile_menu {
+#mobile_open {
     display: inline-block;
+    float: right;
+    padding: 5%;
+}
+
+#mobile_close {
+    display: none;
     float: right;
     padding: 5%;
 }
 
 .nav_mobile {
     background: rgba(13, 13, 13, 0.9);
-    width: 100%;
+    /*width: 100%;*/
     display: block;
-    margin-top: -5px;
     height: 100vh;
+    z-index: 1;
+    position: relative;
 }
 
 .nav_list {
-    padding-top: 10%;
+    position: relative;
+    top: 120px;
     text-align: center;
     font-size: 20px;
 }
@@ -75,6 +83,8 @@
 }
 
 .nav_contact {
+    position: absolute;
+    bottom: 10px;
     font-size: 12px;
     padding-left: 20%;
 }
