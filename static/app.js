@@ -26,8 +26,14 @@ $(document).ready(function(){
         $('.nav_mobile').hide();
     }    
     $('nav').on('click', '#mobile_open', function() {
-        $('#mobile_open').hide()
+        $('#mobile_open').fadeOut()
         $('#mobile_close').show()
-        $('.nav_mobile').slideToggle();
+        $('.nav_mobile').slideDown();
+   })
+    $('nav').on('click', '#mobile_close', function() {
+        $('#mobile_open').show()
+        $('.logo').show()
+        $('#mobile_close').hide()
+        $('.nav_mobile').slideUp();
    })
 });

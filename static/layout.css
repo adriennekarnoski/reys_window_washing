@@ -20,13 +20,6 @@ nav {
     font-family: 'Glegoo', serif;
 }
 
-.nav_mobile {
-    display: inline-block;
-}
-
-.nav_desktop {
-    display: none;
-}
 
 @media screen and (min-width: 640px) {
     nav {
@@ -36,14 +29,6 @@ nav {
         background: #0e0e0b;
         color: white;
         font-family: 'Glegoo', serif;
-    }
-
-    .nav_mobile {
-        display: none;
-    }
-
-    .nav_desktop {
-        display: inline-block;
     }
 }
 
