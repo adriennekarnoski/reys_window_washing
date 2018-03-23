@@ -26,11 +26,11 @@
     <span class="nav_mobile clearfix">
       <i class="fas fa-times fa-4x" id="mobile_close"></i>
       <ul class="nav_list">
-        <li><a href="{{ url_for('home') }}" id="home">HOME</a></li>
-        <li><a href="{{ url_for('about') }}" id="about">ABOUT REY</a></li>
-        <li><a href="{{ url_for('services') }}" id="services">SERVICES</a></li>
-        <li><a href="{{ url_for('discounts') }}" id="discounts">DISCOUNTS</a></li>
-        <li><a href="{{ url_for('contact') }}" id="contact">REQUEST A QUOTE</a></li>
+        <li><a href="{{ url_for('home') }}" id="mobile_home">HOME</a></li>
+        <li><a href="{{ url_for('about') }}" id="mobile_about">ABOUT REY</a></li>
+        <li><a href="{{ url_for('services') }}" id="mobile_services">SERVICES</a></li>
+        <li><a href="{{ url_for('discounts') }}" id="mobile_discounts">DISCOUNTS</a></li>
+        <li><a href="{{ url_for('contact') }}" id="mobile_contact">REQUEST A QUOTE</a></li>
       </ul>
       <ul class="nav_icons">
         <li><a href="https://www.facebook.com/ReysWindowWashing/" class="icon_span">
@@ -46,7 +46,10 @@
       <ul class="nav_contact">
         <li><span class="icon_span"><i class="fas fa-mobile-alt"></i></span>916.540.8373</li>  
         <li><span class="icon_span"><i class="far fa-envelope"></i></span>reyswindowwashing@gmail.com</li>
-        <li><span class="icon_span"><i class="far fa-clock"></i></span>5:00PM - 9:00PM</li>
+        <li><span class="icon_span"><i class="far fa-clock"></i></span>Monday - Friday</li>
+        <li><span class="icon_span"><i class="far fa-clock text_gray"></i></span>8:00AM - 5:00PM</li>
+        <li><span class="icon_span"><i class="far fa-clock text_gray"></i></span>Saturday - Sunday</li>
+        <li><span class="icon_span"><i class="far fa-clock text_gray"></i></span>7:00AM - 5:00PM</li>
       </ul>
    </span>
     <img src="/static/logo.png" class="logo">
@@ -74,7 +77,14 @@
         <ul class="nav_contact">
           <li><span class="icon_span"><i class="fas fa-mobile-alt"></i></span>916.540.8373</li>  
           <li><span class="icon_span"><i class="far fa-envelope"></i></span>reyswindowwashing@gmail.com</li>
-          <li><span class="icon_span"><i class="far fa-clock"></i></span>5:00PM - 9:00PM</li>
+          <li><span class="icon_span"><i class="far fa-clock"></i></span>Hours of Operation
+            <ul>
+          <li>MON - FRI</li>
+          <li>8:00AM - 5:00PM</li>
+          <li>SAT - SUN</li>
+          <li>7:00AM - 5:00PM</li>
+       </ul>
+       </li>
         </ul>
     </span>
   </nav>
@@ -88,27 +98,12 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum purus nibh, ac varius lorem iaculis consectetur. Proin eu arcu sollicitudin,</p>
       </article>
       <article class="two_small right"> 
-        <ul class="nav_contact">
-          <li>
-            <span class="icon_span"><i class="fas fa-mobile-alt"></i></span>
-        916.540.8373
-          </li>  
-          <li>
-            <span class="icon_span"><i class="far fa-envelope"></i></span>
-            reyswindowwashing@gmail.com
-          </li>
-            <li>
-            <span class="icon_span"><i class="fab fa-facebook-square"></i></span>
-            facebook.com/ReysWindowWashing/
-          </li>  
-          <li>
-            <span class="icon_span"><i class="fab fa-instagram"></i></span>
-            @ReysWindowWashing
-          </li>
-          <li>
-            <span class="icon_span"><i class="far fa-clock"></i></span>
-            5:00PM - 9:00PM
-          </li>
+        <ul class="foot_contact">
+          <li><span class="icon_span"><i class="fas fa-mobile-alt"></i></span>916.540.8373</li>  
+          <li><span class="icon_span"><i class="far fa-envelope"></i></span>reyswindowwashing@gmail.com</li>
+          <li><span class="icon_span"><i class="fab fa-facebook-square"></i></span>facebook.com/ReysWindowWashing/</li>  
+          <li><span class="icon_span"><i class="fab fa-instagram"></i></span>@ReysWindowWashing</li>
+          <li><span class="icon_span"><i class="far fa-clock"></i></span>5:00PM - 9:00PM</li>
         </ul>
       </article>
     </section>

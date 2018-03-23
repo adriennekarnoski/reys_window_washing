@@ -3,8 +3,10 @@ $(document).ready(function(){
     var page = path.split('/').reverse()[0];
     if(page === "") {
         $("#home").css("color", "#68b1ac")
+        $("#mobile_home").css("color", "#68b1ac")
     } else {
-        $("#" + page).css("color", "#68b1ac")  
+        $("#" + page).css("color", "#68b1ac")
+        $("#mobile_" + page).css("color", "#68b1ac")  
     }
 });
 
@@ -21,13 +23,15 @@ $(document).ready(function(){
    })
 });
 
-$(document).ready(function(){
-    if ($(window).width() < 640) {
-        $('.nav_mobile').hide();
-    }    
+$(document).ready(function(){   
     $('nav').on('click', '#mobile_open', function() {
-        $('#mobile_open').hide()
-        $('#mobile_close').show()
-        $('.nav_mobile').slideToggle();
+        $('#mobile_open').fadeOut()
+        $('#mobile_close').fadeIn()
+        $('.nav_mobile').slideDown();
+   })
+    $('nav').on('click', '#mobile_close', function() {
+        $('#mobile_open').fadeIn()
+        $('#mobile_close').fadeOut()
+        $('.nav_mobile').slideUp();
    })
 });
