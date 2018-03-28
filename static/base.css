@@ -75,6 +75,12 @@
     font-weight: bolder;
 }
 
+.tiny_heading {
+    display: block;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
 .text_center {
     text-align: center;
 }
@@ -102,4 +108,5 @@ p {
 a {
     text-decoration: none;
     padding-top: 5%;
+    color: white;
 }

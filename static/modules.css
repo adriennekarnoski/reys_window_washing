@@ -24,7 +24,7 @@
 }
 
 .logo {
-    max-width: 65px;
+    max-height: 75px;
     margin: 0px;
     display: inline-block;
     padding: 3%;
@@ -32,7 +32,7 @@
 
 @media screen and (min-width: 640px) {
     .logo {
-        max-width: 200px;
+        max-height: 239px;
         margin: auto;
         display: block;
         padding-top: 5%;
@@ -82,7 +82,7 @@
     .nav_desktop {
         display: inline-block;
         position: relative;
-        height: 80%;
+        height: calc(100% - 239px);
         width: 100%;
     }
 }
@@ -106,13 +106,13 @@
 .nav_contact {
     position: relative;
     color: #ccc;
-    top: 35%;
+    bottom: -30%;
     font-size: 12px;
     padding-left: 20%;
 }
 
 .nav_contact ul li {
-    padding-left: 30%;
+    padding-left: 25%;
 }
 
 @media screen and (min-width: 640px) {
@@ -120,7 +120,8 @@
         position: absolute;
         color: #ccc;
         padding-left: 0%;
-        top: 64%;
+        bottom: 4%;
+        height: 100px;
     }
 }
 
@@ -139,14 +140,14 @@
     text-align: center;
     position: relative;
     width: 100%;
-    top: 35%;
+    bottom: -30%;
 }
 
 @media screen and (min-width: 640px) {
     .nav_icons {
         position: absolute;
         font-size: 12px;
-        top: 58%;
+        bottom: calc(4% + 105px);
     }
 }
 
@@ -273,8 +274,17 @@
 .op_hours {
     background: #d9d9d9;
     padding: 3% 5%;
-    width: 80%;
-    margin: 10% 0% -10% 15%;
+    width: 100%;
+    margin: 10% 0%;
+}
+
+@media screen and (min-width: 640px) {
+    .op_hours {
+        background: #d9d9d9;
+        padding: 3% 5%;
+        width: 80%;
+        margin: 10% 0% -10% 15%;
+    }
 }
 
 .op_hours h2 {
@@ -282,25 +292,60 @@
     font-family: 'Amatic SC';
     font-size: 1.5em;
     font-weight: bolder;
-    margin-left: 15%;
+    margin-left: 5%;
     padding-top: 3%;
 }
 
 .op_hours p {
-    margin-left: 15%;
+    margin-left: 5%;
     padding-bottom: 3%;
 }
+
+@media screen and (min-width: 640px) {
+    .op_hours h2 {
+        display: inline-block;
+        font-family: 'Amatic SC';
+        font-size: 1.5em;
+        font-weight: bolder;
+        margin-left: 15%;
+        padding-top: 3%;
+    }
+
+    .op_hours p {
+        margin-left: 15%;
+        padding-bottom: 3%;
+    }
+}
+
+
 
 .op_hours .cal_icon {
     margin: 5% 0%;
     padding-top: 10%;
+    width: 20%;
+    float: left;
 }
 
 .op_hours .cal_hours {
     margin-top: 3%;
-    width: 65%;
+    width: 45%;
     border-left: solid 3px #68b1ac;
+    float: right;
 }
+
+@media screen and (min-width: 640px) {
+    .op_hours .cal_icon {
+        margin: 5% 0%;
+        padding-top: 10%;
+    }
+
+    .op_hours .cal_hours {
+        margin-top: 3%;
+        width: 65%;
+        border-left: solid 3px #68b1ac;
+    }
+}
+
 /*home form*/
 
 .home_contact {
@@ -567,30 +612,24 @@
 }
 
 .services_content article {
+    background: #1d1d1d;
     border-top: solid 5px #68b1ac;
-    padding-bottom: 10%;
+    padding: 3% 0%;
+    margin-left: 10%;
+    width: 80%;
 }
 
-.services_content article h3 {
-    font-size: 1.7em;
-    padding-top: 2%;
+.services_content h2 {
+    color: #999999;
 }
 
-.services_content input[type=text] {
-    width: 85%;
-    padding: 12px;
-    border: 1px solid #ccc; 
-    border-radius: 4px;
-    margin: 6px; 
+.services_content p {
+    padding: 2% 5% 2% 0%;
 }
 
-.services_content textarea {
-    width: 85%;
-    height: 150px;
-    padding: 12px;
-    border: 1px solid #ccc; 
-    border-radius: 4px;
-    margin: 6px; 
+.services_content li {
+    padding: 1% 0%;
+    font-size: 12px;
 }
 
 /*contact*/
@@ -605,76 +644,26 @@
     height: 60vh;
 }
 
-.tab {
-    overflow: hidden;
-    /*border: 1px solid #ccc;*/
-    background-color: #f1f1f1;
+.con_tent ul {
+    font-size: 12px;
 }
 
-.tab button {
-    background-color: inherit;
-    font-family: 'Amatic SC';
-    font-size: 24px;
-    font-weight: bolder;
-    text-transform: uppercase;
-    width: 50%;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
+.con_tent .fa-2x {
+    padding-top: 10%;
+    padding-bottom: 3%;
+    color: #999999;
 }
 
-.tab button:hover {
-    background-color: #ddd;
-}
-
-.tab button.active {
-    background-color: #ccc;
-}
-
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-}
-
-.tabcontent h2, .tabcontent h3 {
-    padding-left: 10%;
-}
-
-.tabcontent h4 {
-    border-bottom: solid 5px #68b1ac;
-    width: 95%;
-    padding: 1% 0%;
-    margin-bottom: 2%;
-    font-size: 14px;
-}
-
-.tabcontent li .fa-2x {
+.con_tent h4 {
     padding-top: 3%;
-    color: #68b1ac;
 }
 
-.tabcontent h2 {
-    padding-top: 5%;
+.con_tent form {
+    width: 90%;
+    float: right;
 }
 
-.tabcontent input[type=submit] {
-    color: #ccc;
-    text-transform: uppercase;
-    font-family: 'Amatic SC';
-    background: none;
-    border: none;
-    font-weight: bolder;
-    font-size: 26px;
-    padding: 12px;
-    margin: 6px; 
-}
-
-.submit_span {
+/*.submit_span {
     margin-right: 10%;
     display: inline-block;
 }
@@ -682,33 +671,32 @@
 .submit_span .fa-lg {
     padding-bottom: 4%;
     color: #68b1ac;
-}
+}*/
 
 
 /*contact container*/
 
-.tabcontent form {
+/*.tabcontent form {
     margin-left: 10%;
-}
+}*/
 
-#contact_container input[type=text] {
+/*#contact_container input[type=text] {
     width: 85%;
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    margin: 6px; 
+}*/
+
+.contact_container textarea {
+    width: 85%;
+    height: 60px;
     padding: 12px;
     border: 1px solid #ccc; 
     border-radius: 4px;
     margin: 6px; 
 }
 
-#contact_container textarea {
-    width: 85%;
-    height: 130px;
-    padding: 12px;
-    border: 1px solid #ccc; 
-    border-radius: 4px;
-    margin: 6px; 
-}
-
-/*quote container*/
 
 .half_input input[type=text] {
     width: 39%;
@@ -726,14 +714,6 @@
     margin: 6px; 
 }
 
-#quote_container textarea {
-    width: 85%;
-    height: 45px;
-    padding: 12px;
-    border: 1px solid #ccc; 
-    border-radius: 4px;
-    margin: 6px; 
-}
 
 select {
     width: 44%;
@@ -761,8 +741,7 @@ select {
 .quality section:first-child {
     width: 20%;
     float: left;
-    padding-left: 6%;
-    padding-top: 2%;
+    padding-left: 10%;
 }
 
 @media screen and (min-width: 640px) {
@@ -775,8 +754,131 @@ select {
 
     .quality h2 {
         text-align: center;
+        width: 20%;
+    }
+
+    .quality section:first-child {
+        width: 20%;
+        float: left;
+        padding-left: 6%;
+        padding-top: 2%;
     }
 }
+
+/*discounts*/
+
+.discounts_container {
+    padding-top: 10%;
+}
+
+.discounts_content {
+    width: 80%;
+    margin: auto;
+    height: 60vh;
+}
+
+.discounts_content article {
+    /*border-top: solid 5px #1d1d1d;*/
+/*    padding-bottom: 10%;
+    margin-left: 10%;
+    width: 80%;
+    padding-top: 3%;
+    color: white;*/
+}
+
+/*.discounts_content h2 {
+    color: #999999;
+}*/
+
+/*.discounts_content p {
+    padding: 2% 5% 2% 0%;
+}*/
+
+.discounts_content li {
+    padding: 1% 0%;
+}
+
+.military {
+    width: 90%;
+    margin: 10% 0%;
+}
+
+.military article {
+    height: 150px;
+}
+
+.grid_big p, .referral article p, .referral section p {
+    font-size: 12px;
+}
+
+.grid_big h5 {
+    padding: 4% 0%;
+}
+
+.referral {
+    width: 90%;
+    margin: auto;
+    padding: 10% 5%;
+}
+
+.referral h2 {
+    color: #666666;
+}
+
+.referral h3, .referral section h2 {
+    padding-bottom: 4%;
+}
+
+.referral section p {
+    padding-top: 4%;
+}
+
+.referral section {
+    border-top: solid 3px #68b1ac;
+    height: 100px;
+    padding-top: 5%;
+}
+
+/*about*/
+
+
+.about_content {
+    width: 100%;
+}
+
+.about_background {
+    min-height: 450px;
+    width: 100%;
+    background-image: url("/static/pumpkin.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+}
+
+.about_description {
+    width: 40%;
+    padding: 5%;
+    height: 250px;
+    margin-top: 50px;
+    margin-right: 5%;
+}
+
+.timeline {
+    width: 100%;
+}
+
+.timeline section {
+    width: 80%;
+    margin: auto;
+    height: 100px;
+    color: black;
+    padding-top: 5%;
+}
+
+.timeline section article {
+    text-align: center;
+}
+
 /*footer*/
 
 
@@ -837,4 +939,8 @@ footer h3 {
     .created_by a {
         color: #68b1ac;
     }
+}
+
+.web_image {
+    max-width: 600px;
 }
