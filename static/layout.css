@@ -73,6 +73,11 @@ footer {
     width: 100%;
 }
 
+.small_container {
+    width: 80%;
+    padding: 0% 10%;
+}
+
 .content {
     width: 80%;
     margin: auto;
@@ -228,5 +233,8 @@ footer {
     text-transform: uppercase;
 }
 
-
+.yelp {
+    padding-right: 15%;
+    color: #b3b3b3;
+}
 

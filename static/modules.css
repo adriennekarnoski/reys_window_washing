@@ -250,31 +250,45 @@
     line-height: 18px;
 }
 
-.home_p {
-    padding: 5% 0%;
-    margin-right: 0px;
+
+.introduction {
+    width: 80%;
+    padding: 0% 10% 5% 10%;
+}
+
+
+
+.introduction h2, .introduction h3 {
+    padding-left: 3%;
+}
+.introduction p {
+    padding-left: 5%;
+} 
+
+.introduction p {
+    padding-top: 5%;
     font-size: 14px;
     line-height: 18px;
 }
 
-.home_p a {
+.introduction p a {
     display: block;
     padding-top: 0%;
 }
 
 @media screen and (min-width: 640px) {
-    .home_p {
-        padding: 5% 0% 0% 5%;
-        margin-right: -100px;
+    .introduction p  {
+        padding-top: 5%;
         font-size: 14px;
         line-height: 18px;
     }
 }
 
-
 .op_hours {
-    width: 80%;
-    margin: 10%; 
+    width: 40%;
+    margin-left: 5%; 
+    margin-top: 3%;
+    /*margin: 15% 0% 20% 15%;*/
 }
 
 .op_hours .grid_square i {
@@ -294,7 +308,7 @@
 /*
 .op_hours .grid_square i {
    margin-top: 3%;
-}*/
+}
 
 /*.op_hours {
     background: #d9d9d9;
@@ -373,10 +387,43 @@
 */
 /*home form*/
 
+.request_container {
+    width: 80%;
+    padding: 3% 10%;
+}
+
+.request_container p {
+    font-size: 12px;
+    line-height: 18px;
+}
+
 .home_contact {
     display: none;
 }
+/*
+.request_container a {
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    font-size: 12px;
+    margin: auto;
+    margin-top: 5%;
+    cursor: pointer;
+}
+*/
+.home_services .fa-lg {
+    padding: 0% 3%;
+    color: #68b1ac;
+}
 
+.home_services li {
+    padding: 1% 0%;
+}
 @media screen and (min-width: 640px) {
     .home_contact {
         display: inline-block;
@@ -447,6 +494,8 @@
         margin: auto;
         padding-top: 5%;
         padding-bottom: 0%;
+        font-size: 12px;
+        line-height: 16px;
     }
 }
 
@@ -523,6 +572,7 @@
         width: 100px;
         display: inline-block; 
         margin-right: 20px;
+        margin-bottom: 10px;
     }
 
     .buildings .image {
@@ -552,6 +602,7 @@
     color: #b3b3b3;
     padding-top: 2%;
 }
+
 /*.quality {
     width: 90%;
     margin: auto;
@@ -593,6 +644,10 @@
     }
 }*/
 
+.numbers_container {
+    width: 90%;
+    padding: 3% 5%;
+}
 
 .numbers h4 {
     display: inline-block;
@@ -611,11 +666,12 @@
 }
 
 .numbers section {
-    padding: 3%;
-    margin-right: 0px;
+    width: 90%;
+    padding-left: 10%;
+    /*background: #d9d9d9;*/
 }
 
-.numbers a {
+/*.numbers a {
     margin: 10% auto;
 }
 
@@ -639,7 +695,7 @@
         padding-left: 10%;
     }
 }
-
+*/
 .send_message form {
     padding: 10% 5%;
     background: #356764;

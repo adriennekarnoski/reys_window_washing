@@ -27,19 +27,19 @@
 .button {
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 15px;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     display: block;
     width: 150px;
-    font-size: 16px;
+    font-size: 12px;
     margin: auto;
     margin-top: 5%;
     cursor: pointer;
 }
 
-.large_button {
+.home_button {
     border: none;
     color: white;
     padding: 15px 32px;
@@ -54,7 +54,35 @@
     cursor: pointer;
 }
 
+.large_button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    width: 250px;
+    font-size: 12px;
+    margin: auto;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
 /*text*/
+
+.big_heading {
+    font-family: 'Amatic SC';
+    font-size: 3em;
+    font-weight: bolder;
+    /*padding-bottom: 2%;*/
+    display: inline-block;
+    /*margin: auto;*/
+    margin: 10% auto;
+    /*padding: 5% 0%;*/
+    border-bottom: solid #68b1ac 3px;
+}
+
 
 .heading {
     font-family: 'Amatic SC';
@@ -87,6 +115,11 @@
 
 .text_right {
     text-align: right;
+}
+
+.text_small {
+    font-size: 12px;
+    line-height: 18px;
 }
 
 .text_teal {
