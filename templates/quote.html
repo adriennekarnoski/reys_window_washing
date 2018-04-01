@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<section class="page gray quote_container">
+
+    <article class="quote_content clearfix">
+                <section class="text_center">
+                  <h1 class="big_heading">Get a personalized quote</h1>
+                </section>
+                <section class="one right">
+
+                      <form method="POST" action="">
+                      {{ contact_form.csrf_token }}
+                      {{ quote_form.csrf_token }}
+                      <h4 class="sub_heading">Personal Information</h4>
+                    <span class="full_input">
+                      {{ contact_form.name(placeholder="Full Name")}}
+                      {{ contact_form.contact(placeholder="Phone Number or Email Address") }}
+
+                    <h4 class="sub_heading">Company Information</h4>
+                      {{ quote_form.company(placeholder="Company Name") }}
+                      {{ quote_form.location(placeholder="City") }}
+                  </span>
+                  <span class="half_input">
+                      {{ quote_form.floors(placeholder="Number of Floors") }}
+                      {{ quote_form.building }}
+                  </span>
+                      {{ quote_form.message(placeholder="Additonal information or message (optional)...", class="message_input") }}
+                  
+                <input type="submit" value="Send" class="button teal">
+                  
+                </form>
+            </section>
+           
+            
+    
+    </article>
+
+
+</section>
+{% endblock %}

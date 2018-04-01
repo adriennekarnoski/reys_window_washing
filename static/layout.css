@@ -215,7 +215,16 @@ footer {
     width: calc(62% - 3px);
     padding: 4%;
     display: inline-block;
-    border-left: solid #1d1d1d 3px;
+    border-left: none;
+}
+
+@media screen and (min-width: 640px) {
+    .grid_square .grid_big {
+        width: calc(62% - 3px);
+        padding: 4%;
+        display: inline-block;
+        border-left: solid #1d1d1d 3px;
+    }
 }
 
 .grid_square h2 {

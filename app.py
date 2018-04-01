@@ -6,9 +6,13 @@ app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY')
 
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def home():
-    return render_template('home.html')
+    form = ContactForm()
+    if request.method == 'POST':
+        if form.validate():
+            return redirect(url_for('done'))
+    return render_template('home.html', form=form)
 
 
 @app.route('/services')
@@ -26,8 +30,8 @@ def discounts():
     return render_template('discounts.html')
 
 
-@app.route('/contact', methods=['GET', 'POST'])
-def contact():
+@app.route('/quote', methods=['GET', 'POST'])
+def quote():
     quote_form = QuoteForm()
     contact_form = ContactForm()
     if request.method == 'POST':
@@ -35,7 +39,20 @@ def contact():
             return redirect(url_for('done'))
         elif quote_form.validate():
             return redirect(url_for('done'))
-    return render_template('contact.html', quote_form=quote_form, contact_form=contact_form)
+    return render_template(
+        'quote.html',
+        quote_form=quote_form,
+        contact_form=contact_form)
+
+
+@app.route('/contact', methods=['GET', 'POST'])
+def contact():
+    form = ContactForm()
+    if request.method == 'POST':
+        if form.validate():
+            return redirect(url_for('done'))
+    return render_template('contact.html', form=form)
+
 
 @app.route('/done')
 def done():
