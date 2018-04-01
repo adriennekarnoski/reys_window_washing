@@ -15,6 +15,7 @@
   <link href="{{url_for('static', filename='base.css')}}" rel="stylesheet" type="text/css">
   <link href="{{url_for('static', filename='layout.css')}}" rel="stylesheet" type="text/css">
   <link href="{{url_for('static', filename='modules.css')}}" rel="stylesheet" type="text/css">
+  <link href="{{url_for('static', filename='text.css')}}" rel="stylesheet" type="text/css">
 
   <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='flaticon.css')}}">
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
@@ -31,8 +32,8 @@
         <li><a href="{{ url_for('about') }}" id="mobile_about">ABOUT REY</a></li>
         <li><a href="{{ url_for('services') }}" id="mobile_services">SERVICES</a></li>
         <li><a href="{{ url_for('discounts') }}" id="mobile_discounts">DISCOUNTS</a></li>
-        <li><a href="{{ url_for('contact') }}" id="mobile_contact">REQUEST A QUOTE</a></li>
-
+        <li><a href="{{ url_for('quote') }}" id="mobile_quote">REQUEST A QUOTE</a></li>
+        <li><a href="{{ url_for('contact') }}" id="mobile_contact">CONTACT</a></li>
       </ul>
       <ul class="nav_icons">
         <li><a href="https://www.facebook.com/ReysWindowWashing/" class="icon_span">
