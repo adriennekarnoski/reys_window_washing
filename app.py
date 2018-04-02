@@ -42,9 +42,9 @@ def quote():
     contact_form = ContactForm()
     if request.method == 'POST':
         if contact_form.validate():
-            return redirect(url_for('done'))
+            return redirect(url_for('success'))
         elif quote_form.validate():
-            return redirect(url_for('done'))
+            return redirect(url_for('success'))
     return render_template(
         'quote.html',
         quote_form=quote_form,
@@ -56,10 +56,10 @@ def contact():
     form = ContactForm()
     if request.method == 'POST':
         if form.validate():
-            return redirect(url_for('done'))
+            return redirect(url_for('success'))
     return render_template('contact.html', form=form)
 
 
-@app.route('/done')
-def done():
-    return render_template('done.html')
+@app.route('/success')
+def success():
+    return render_template('success.html')

@@ -6,7 +6,7 @@
     <section class="home_background">
         <article class="home_overlay">
             <h1>Superior service. Quality relationships.</h1>
-            <a href="{{ url_for('services') }}" class="home_button teal">Request a Quote</a>
+            <a href="{{ url_for('quote') }}" class="home_button teal">Request a Quote</a>
             <p>Or request a free consultation</p>
             <h2>916.540.8373</h2>
         </article>
@@ -23,7 +23,7 @@
         <article class="two_even left">
             <p>It's not only our moto, but our promise too.</p>
             <p>At Rey's Window Washing, not only will we provide you with a service that you won't be disappointed with, we strive to create the best possible relationship with out clients. From our smallest client to our largest, everyone is treated as our most valued customer.</p>
-            <p>Owned and operated by Rey Howard! <a href="#" class="text_teal">Read more about Rey <i class="fas fa-angle-right"></i></a></p>
+            <p>Owned and operated by Rey Howard! <a href="{{ url_for('about') }}" class="text_teal">Read more about Rey <i class="fas fa-angle-right"></i></a></p>
         </article>
         <article class="two_even right op_hours">
             <article class="grid_square clearfix">
@@ -48,7 +48,7 @@
             <h2 class="semi_heading text_teal">Ready to get started?</h2>
             <p>Requesting a quote is fast and easy. Simply fill out our request form, and recieve a price personalized for your needs.</p></article>
         <article class="two_even right">
-            <a href="#" class="button teal">Request a quote</a>  
+            <a href="{{ url_for('quote') }}" class="button teal">Request a quote</a>  
         </article>
     </section>
 
@@ -98,7 +98,7 @@
         </article>
         </article>
         <article class="two_small left">
-            <a href="#" class="button gray">View All Services</a>
+            <a href="{{ url_for('services') }}" class="button gray">View All Services</a>
         </article>
     </section>
 
@@ -109,7 +109,7 @@
         <article class="two_big right">
             <section class="right building_left">
                 <h2>Residential</h2>
-                <span class="right"><i class="flaticon-house icon"></i></span>
+                <span class="right"><i class="flaticon-house-1 icon"></i></span>
                 <p class="text_small">Save time and money while prolonging the life of your windows, keeping them clean and properly maintained.</p>
             </section>
             <section class="right building_right">
@@ -129,7 +129,7 @@
                 <h2 class="sub_heading text_teal">Easy as one, two, three</h2>
                 <h3 class="heading">Start today!</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum purus nibh, ac varius lorem iaculis consectetur.</p>
-                <a href="#" class="button gray desktop">Get Your Quote!</a>
+                <a href="{{ url_for('quote') }}" class="button gray desktop">Get Your Quote!</a>
             </section>
         </article>
         <article class="two_big right numbers">
@@ -148,7 +148,7 @@
                     <h4 class="heading left">3</h4>
                     <h5>Get a Quote</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="#" class="button gray mobile">Get Your Quote!</a>
+                    <a href="{{ url_for('quote') }}" class="button gray mobile">Get Your Quote!</a>
                 </article>
             </section>
         </article>
