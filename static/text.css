@@ -1,10 +1,10 @@
 
 
 .icon {
-    height: 92px;
-    width: 93px;
     font-size: 70px;
 }
+
+
 /* home */
 
 
@@ -201,6 +201,8 @@
         line-height: 18px;
     }
 }
+
+
 /*services*/
 
 
@@ -211,6 +213,28 @@
 .services_content p {
     padding: 2% 5% 2% 0%;
     font-size: 12px;
+}
+
+.services article i {
+    display: inline-block;
+    border: solid #d9d9d9 3px;
+    border-radius: 50%;
+    width: 110px;
+    height: 100px;
+    padding: 10% 5% 2% 5%;
+    margin: 10% 0%;
+}
+
+.services_content .fa-lg {
+    display: inline-block;
+    width: 50px;
+}
+
+@media screen and (min-width: 640px) {
+    .services article i {
+        padding: 15% 5% 2% 5%;
+        margin-top: 0%;
+    }
 }
 
 
@@ -229,7 +253,7 @@
     color: #666666;
 }
 
-.referral h3, .referral section h2 {
+.referral h3, .referral section h2, .referral h5 {
     padding-bottom: 4%;
 }
 

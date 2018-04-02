@@ -88,6 +88,9 @@ footer {
     padding: 5% 0%;
 }
 
+.small_padding {
+    padding: 1% 0%;
+}
 
 /*container flow*/
 
@@ -205,20 +208,24 @@ footer {
     border: solid #1d1d1d 3px;
 }
 
-.grid_square .grid_small {
-    width: 22%;
-    padding: 4%;    
-    display: inline-block;
+.grid_square .grid_small {   
+    display: none;
 }
 
 .grid_square .grid_big {
-    width: calc(62% - 3px);
-    padding: 4%;
+    width: 70%;
+    padding: 4% 15% 4% 15%;
     display: inline-block;
     border-left: none;
 }
 
 @media screen and (min-width: 640px) {
+    .grid_square .grid_small {
+        width: 22%;
+        padding: 4%;    
+        display: inline-block;
+    }
+
     .grid_square .grid_big {
         width: calc(62% - 3px);
         padding: 4%;

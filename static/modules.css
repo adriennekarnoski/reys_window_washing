@@ -197,9 +197,10 @@
 }
 
 .op_hours .grid_square ul {
-   margin-top: 0%;
-   padding-left: 5%;
-   padding-top: 0%;
+    width: 90%;
+    margin-top: 0%;
+    padding-left: 15%;
+    padding-top: 0%;
 }
 
 .op_hours li {
@@ -254,6 +255,10 @@
     width: 80%;
     margin: auto;
     padding: 5% 10%;
+}
+
+.flaticon-broom {
+    padding-right: 25%;
 }
 
 .building_right, .building_left {
@@ -493,7 +498,7 @@
     border-right: none;
     padding: 3% 2%;
     width: 96%;
-    height: 200px;
+    height: auto;
     margin: 0px 3px;
     text-align: center;
 }
@@ -513,6 +518,7 @@
         border-right: solid 5px #68b1ac;
         width: 27%;
         text-align: left;
+        height: 320px;
     }
 }
 
@@ -541,6 +547,13 @@
 
 .military article {
     height: 150px;
+}
+
+.military i {
+    display: inline-block;
+    padding-top: 0%;
+    padding-bottom: 25%;
+    padding-left: 10%;
 }
 
 .referral {
@@ -576,6 +589,12 @@
         width: 90%;
     }
 
+    .military i {
+        display: inline-block;
+        padding-top: 25%;
+        padding-left: 10%;
+    }
+
     .referral {
         margin-top: 0%;
     }
@@ -597,7 +616,7 @@
 
 
 .contact_container {
-    padding-top: 8%;
+    padding: 8% 0%;
     background: #262626;
     color: white;
 }
@@ -641,6 +660,10 @@
 }
 
 @media screen and (min-width: 640px) {
+    .contact_container {
+        padding-bottom: 0%;
+    }
+
     .con_tent form {
         width: 90%;
         float: right;
@@ -665,9 +688,17 @@
     height: 50px;
 }
 
+.quote_submit {
+    width: auto;
+}
+
 @media screen and (min-width: 640px) {
     .quote_content {
         width: 80%;
+    }
+
+    .quote_submit {
+        width: 90%;
     }
 }
 
