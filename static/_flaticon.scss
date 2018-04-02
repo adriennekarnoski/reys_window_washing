@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 16/03/2018 03:43
+    Creation date: 02/04/2018 02:07
     */
 
     @font-face {
@@ -36,22 +36,44 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-calendar:before { content: "\f100"; }
-.flaticon-mop:before { content: "\f101"; }
-.flaticon-glass:before { content: "\f102"; }
-.flaticon-broom:before { content: "\f103"; }
-.flaticon-holidays:before { content: "\f104"; }
-.flaticon-cleaning:before { content: "\f105"; }
-.flaticon-bubble:before { content: "\f106"; }
+    .flaticon-mail:before { content: "\f100"; }
+.flaticon-testimonial:before { content: "\f101"; }
+.flaticon-group:before { content: "\f102"; }
+.flaticon-avatar:before { content: "\f103"; }
+.flaticon-social:before { content: "\f104"; }
+.flaticon-quality:before { content: "\f105"; }
+.flaticon-calendar:before { content: "\f106"; }
 .flaticon-house:before { content: "\f107"; }
-.flaticon-quality:before { content: "\f108"; }
+.flaticon-bubble:before { content: "\f108"; }
+.flaticon-cleaning:before { content: "\f109"; }
+.flaticon-light-bulb:before { content: "\f10a"; }
+.flaticon-window:before { content: "\f10b"; }
+.flaticon-military:before { content: "\f10c"; }
+.flaticon-list:before { content: "\f10d"; }
+.flaticon-pencil:before { content: "\f10e"; }
+.flaticon-tool:before { content: "\f10f"; }
+.flaticon-glass:before { content: "\f110"; }
+.flaticon-clock:before { content: "\f111"; }
+.flaticon-holidays:before { content: "\f112"; }
+.flaticon-broom:before { content: "\f113"; }
     
-    $font-Flaticon-calendar: "\f100";
-    $font-Flaticon-mop: "\f101";
-    $font-Flaticon-glass: "\f102";
-    $font-Flaticon-broom: "\f103";
-    $font-Flaticon-holidays: "\f104";
-    $font-Flaticon-cleaning: "\f105";
-    $font-Flaticon-bubble: "\f106";
+    $font-Flaticon-mail: "\f100";
+    $font-Flaticon-testimonial: "\f101";
+    $font-Flaticon-group: "\f102";
+    $font-Flaticon-avatar: "\f103";
+    $font-Flaticon-social: "\f104";
+    $font-Flaticon-quality: "\f105";
+    $font-Flaticon-calendar: "\f106";
     $font-Flaticon-house: "\f107";
-    $font-Flaticon-quality: "\f108";
+    $font-Flaticon-bubble: "\f108";
+    $font-Flaticon-cleaning: "\f109";
+    $font-Flaticon-light-bulb: "\f10a";
+    $font-Flaticon-window: "\f10b";
+    $font-Flaticon-military: "\f10c";
+    $font-Flaticon-list: "\f10d";
+    $font-Flaticon-pencil: "\f10e";
+    $font-Flaticon-tool: "\f10f";
+    $font-Flaticon-glass: "\f110";
+    $font-Flaticon-clock: "\f111";
+    $font-Flaticon-holidays: "\f112";
+    $font-Flaticon-broom: "\f113";

@@ -1,5 +1,10 @@
 
 
+.icon {
+    height: 92px;
+    width: 93px;
+    font-size: 70px;
+}
 /* home */
 
 
@@ -305,4 +310,18 @@ footer h3 {
 @media screen and (min-width: 640px) {
     footer p {
         width: 80%;
+    }
+}
+
+
+/*sent*/
+
+.sent_content h1 {
+    font-family: 'Amatic SC';
+    font-size: 4em;
+    font-weight: bolder;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 10%;
+    border-bottom: solid #68b1ac 3px;
 }
