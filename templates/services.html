@@ -10,14 +10,18 @@
         <section class="two_even left">
             <h2 class="sub_heading">Designed to meet your needs</h2>
             <h3 class="heading">Rey's Window Washing Services</h3>
+            <span class="desktop_show">
             <ul>  
                 <li><i class="far fa-credit-card fa-lg"></i> Credit Cards accepted</li>
                 <li><i class="far fa-calendar-check fa-lg"></i> By appointment only</li>
                 <li><i class="far fa-clock fa-lg"></i> Duration of service varies</li>
             </ul>
+        </span>
         </section>
-        <section class="two_even right">
-            <a href="{{ url_for('quote') }}" class="button gray">Get Your Quote!</a>    
+        <section class="two_even right text_center">
+            <span class="desktop_show">
+            <a href="{{ url_for('quote') }}" class="button gray">Get Your Quote!</a> 
+            </span>   
         </section>
         <section class="clearfix services">
             <article class="three left">
@@ -60,6 +64,18 @@
                     <li>Recurring Maintenance</li>
                     <li>Paint Removal</li>
                </ul>
+            </article>
+        </section>
+        <section class="small_container clearfix mobile_show">
+            <article class="two_even left">
+                 <a href="{{ url_for('quote') }}" class="button gray">Get Your Quote!</a>
+            </article>
+            <article class="two_even right text_center">
+                <ul>  
+                    <li><i class="far fa-credit-card fa-lg"></i> Credit Cards accepted</li>
+                    <li><i class="far fa-calendar-check fa-lg"></i> By appointment only</li>
+                    <li><i class="far fa-clock fa-lg"></i> Duration of service varies</li>
+                </ul>
             </article>
         </section>
     </article>

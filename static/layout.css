@@ -194,6 +194,24 @@ footer {
     }
 }
 
+.desktop_show {
+    display: none;
+}
+
+.mobile_show {
+    display: inline-block;
+}
+
+@media screen and (min-width: 640px) {
+    .desktop_show {
+        display: inline-block;
+    }
+
+    .mobile_show {
+        display: none;
+    }
+}
+
 /*home*/
 
 .home_background {
@@ -221,16 +239,16 @@ footer {
 
 @media screen and (min-width: 640px) {
     .grid_square .grid_small {
-        width: 22%;
+        width: calc(22% - 3px);
         padding: 4%;    
         display: inline-block;
+        border-right: solid #1d1d1d 3px;
     }
 
     .grid_square .grid_big {
-        width: calc(62% - 3px);
+        width: 62%;
         padding: 4%;
         display: inline-block;
-        border-left: solid #1d1d1d 3px;
     }
 }
 
