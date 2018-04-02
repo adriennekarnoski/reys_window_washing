@@ -73,6 +73,11 @@ footer {
     width: 100%;
 }
 
+.small_container {
+    width: 80%;
+    padding: 0% 10%;
+}
+
 .content {
     width: 80%;
     margin: auto;
@@ -83,6 +88,9 @@ footer {
     padding: 5% 0%;
 }
 
+.small_padding {
+    padding: 1% 0%;
+}
 
 /*container flow*/
 
@@ -195,7 +203,54 @@ footer {
     height: 500px;
 }
 
+.grid_square {
+    width: calc(100% - 6px);
+    border: solid #1d1d1d 3px;
+}
 
+.grid_square .grid_small {   
+    display: none;
+}
 
+.grid_square .grid_big {
+    width: 70%;
+    padding: 4% 15% 4% 15%;
+    display: inline-block;
+    border-left: none;
+}
 
+@media screen and (min-width: 640px) {
+    .grid_square .grid_small {
+        width: 22%;
+        padding: 4%;    
+        display: inline-block;
+    }
+
+    .grid_square .grid_big {
+        width: calc(62% - 3px);
+        padding: 4%;
+        display: inline-block;
+        border-left: solid #1d1d1d 3px;
+    }
+}
+
+.grid_square h2 {
+    font-family: 'Amatic SC';
+    font-size: 1.8em;
+    font-weight: bolder;
+    padding: 4% 0%;
+    text-align: center;
+    border-bottom: solid #1d1d1d 3px;
+}
+
+.grid_square h3 {
+    font-size: 0.8em;
+    color: #a6a6a6;
+    text-transform: uppercase;
+}
+
+.yelp {
+    padding-right: 15%;
+    color: #b3b3b3;
+}
 

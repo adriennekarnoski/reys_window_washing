@@ -2,109 +2,37 @@
 
 
 {% block content %}
-<section class="page gray contact_container">
+<section class="page contact_container">
+    <article class="con_tent clearfix">
+      <section class="text_center">
+        <h1>Contact Us</h1>
+      </section>
+      <section class="two_small left">
+        <h2 class="sub_heading text_teal">Still not sure?</h2>
+        <h3 class="heading">Get in contact</h3>
+        <p>Whether you a question or want more information, send us a message!</p>
+        <ul>
+          <li><i class="fas fa-mobile-alt fa-2x"></i><a href="tel:+1-916-540-8373">916.540.8373</a></li>  
+          <li><i class="far fa-envelope fa-2x"></i>reyswindowwashing@gmail.com</li>
+          <li><i class="far fa-clock fa-2x"></i>Hours of Operation
+            <ul>
+              <li>MON - FRI 8:00AM - 5:00PM</li>
+              <li>SAT - SUN 7:00AM - 5:00PM</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
 
-    <article class="con_tent">
-
-        <div class="tab">
-          <button class="tablinks" id="contact">Contact</button>
-          <button class="tablinks" id="quote">Quote</button>
-        </div>
-
-        <div id="contact_container" class="tabcontent">
-            <section class="clearfix">
-                <article class="two_small left">
-                    <h2 class="sub_heading">This is a sub heading</h2>
-                    <h3 class="heading">Introduction to the business</h3>
-                    <ul class="nav_contact">
-                      <li class="text_center"><i class="fas fa-mobile-alt fa-2x"></i></li>
-                      <li class="text_center">916.540.8373</li>
-                      <li class="text_center"><i class="far fa-envelope fa-2x"></i></li>
-                      <li class="text_center">reyswindowwashing@gmail.com</li>
-                      <li class="text_center"><i class="fab fa-facebook-square fa-2x"></i></li>
-                      <li class="text_center">facebook.com/ReysWindowWashing</li>
-                      <li class="text_center"><i class="fab fa-instagram fa-2x"></i></li>
-                      <li class="text_center">@reyswindowwashing</li>
-                    </ul>
-                </article>
-                <article class="two_big right">
-
-                      <form method="POST" action="">
-                      {{ contact_form.csrf_token }}
-                      <h4>Personal Information</h4>
-                      {{ contact_form.name(placeholder="Full Name")}}
-                      {{ contact_form.email(placeholder="Email Address") }}
-                      {{ contact_form.phone(placeholder="Phone Number") }}
-                      {{ contact_form.subject(placeholder="Subject") }}
-                      {{ contact_form.message(placeholder="Your message...", class="message_input") }}
-                        <span class="submit_span right"><input type="submit" value="Send"><i class="fas fa-chevron-right fa-lg"></i></span>
-                        </form>
-                    </article>
-                </section>
-            </div>
-
-        <div id="quote_container" class="tabcontent">
-            <section class="clearfix">
-                <article class="two_small left">
-                    <h2 class="sub_heading">This is a sub heading</h2>
-                    <h3 class="heading">Introduction to the business</h3>
-                    <ul class="nav_contact">
-                      <li class="text_center"><i class="fas fa-mobile-alt fa-2x"></i></li>
-                      <li class="text_center">916.540.8373</li>
-                      <li class="text_center"><i class="far fa-envelope fa-2x"></i></li>
-                      <li class="text_center">reyswindowwashing@gmail.com</li>
-                      <li class="text_center"><i class="fab fa-facebook-square fa-2x"></i></li>
-                      <li class="text_center">facebook.com/ReysWindowWashing</li>
-                      <li class="text_center"><i class="fab fa-instagram fa-2x"></i></li>
-                      <li class="text_center">@reyswindowwashing</li>
-                    </ul>
-                </article>
-                <article class="two_big right">
-                    <form method="POST" action="">
-                        {{ quote_form.csrf_token }}
-                        <h4>Personal Information</h4>
-                        <span class="full_input">
-                          {{ contact_form.name(placeholder="Full Name")}}
-                      </span>
-                      <span class="half_input">
-                          {{ contact_form.phone(placeholder="Phone Number") }}
-                          {{ contact_form.email(placeholder="Email Address") }}
-                      </span>
-                    <h4>Company Information</h4>
-                    <span class="full_input">
-                      {{ quote_form.company(placeholder="Company Name") }}
-                      {{ quote_form.location(placeholder="City") }}
-                  </span>
-                  <span class="half_input">
-                      {{ quote_form.floors(placeholder="Number of Floors") }}
-                      {{ quote_form.building }}
-                  </span>
-                          {{ quote_form.message(placeholder="(Optional) Additional information...", class="message_input") }}
-                  
-                    <span class="submit_span right"><input type="submit" value="Send"><i class="fas fa-chevron-right fa-lg"></i></span>
-                  
-                </form>
-                </article>
-              {# <form method="POST" action="">
-              {{ quote_form.csrf_token }}
-              <h4>Personal Information:</h4>
-              {{ quote_form.name(placeholder="Full Name")}}
-              {{ quote_form.phone(placeholder="Phone Number", class="phone") }}
-              {{ quote_form.email(placeholder="Email Address") }}
-              {{ quote_form.message(placeholder="(Optional) Additional information...", class="message_input") }}
-              <h4>Company Information</h4>
-              {{ quote_form.company(placeholder="Company Name") }}
-              {{ quote_form.location(placeholder="City") }}
-              {{ quote_form.floors(placeholder="Number of Floors") }}
-              {{ quote_form.building }}
-                <input type="submit" value="Send" class="button teal">
-                </form> #}
-            </section>
-            </div>
-            
-    
+      <section class="two_big right">
+        <form method="POST" action="">
+          {{ form.csrf_token }}
+          <span class="full_input">
+          {{ form.name(placeholder="Full Name")}}
+          {{ form.contact(placeholder="Phone Number or Email Address") }}
+          {{ form.message(placeholder="Your message...", class="message_input") }}
+          <input type="submit" value="Send" class="button teal">
+        </form>
+      </section>
     </article>
-
-
 </section>
 {% endblock %}

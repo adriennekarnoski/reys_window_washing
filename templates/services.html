@@ -2,29 +2,64 @@
 
 
 {% block content %}
-<section class="page gray services_container">
-
+<section class="page white services_container">
     <article class="services_content clearfix">
-        <section class="two_even left content">
-            <h2 class="sub_heading">This is a sub heading</h2>
-            <h3 class="heading">Introduction to the business</h3>
+        <section class="one left text_center">
+            <h1 class="big_heading">Services</h1>
+        </section>
+        <section class="two_even left">
+            <h2 class="sub_heading">Designed to meet your needs</h2>
+            <h3 class="heading">Rey's Window Washing Services</h3>
+            <ul>  
+                <li><i class="far fa-credit-card fa-lg"></i> Credit Cards accepted</li>
+                <li><i class="far fa-calendar-check fa-lg"></i> By appointment only</li>
+                <li><i class="far fa-clock fa-lg"></i> Duration of service varies</li>
+            </ul>
         </section>
         <section class="two_even right">
-            <article class="one left">
-                <h3 class="heading">Introduction to the business</h3>
-                one
+            <a href="{{ url_for('quote') }}" class="button gray">Get Your Quote!</a>    
+        </section>
+        <section class="clearfix services">
+            <article class="three left">
+                <section class="text_center">
+                    <i class="flaticon-window icon"></i>
+                </section>
+                <h2 class="tiny_heading">Streak free shine, every time</h2>
+                <h4 class="semi_heading">Window Washing</h4>
+                <ul>
+                    <li class="text_teal">* The cleaning of your windows includes all tracks and sills</li>
+                    <li>Window Interiors</li>
+                    <li>Ledges</li>
+                    <li>Screens</li>
+                    <li>Frames</li>
+                </ul>
             </article>
-            <article class="one left">
-                <h3 class="heading">Introduction to the business</h3>
-                two
+            <article class="three left">
+                <section class="text_center">
+                    <i class="flaticon-bubble icon"></i>
+                </section>
+                <h2 class="tiny_heading">Shine, inside and out</h2>
+                <h4 class="semi_heading">Interiors and Exteriors </h4>   
+                <ul>
+                    <li>Gutters</li>
+                    <li>Glass Doors</li>
+                    <li>Mirrors</li>
+                    <li>Dusting</li>
+                    <li>Cieling fans</li>
+               </ul>
             </article>
-            <article class="one left">
-                <h3 class="heading">Introduction to the business</h3>
-                three
-            </article>
-            <article class="one left">
-                <h3 class="heading">Introduction to the business</h3>
-                four
+            <article class="three left">
+                <section class="text_center">
+                    <i class="flaticon-tool icon"></i>
+                </section>
+                <h2 class="tiny_heading">It's all in the details</h2>
+                <h4 class="semi_heading">Details and extras</h4>    
+                <ul>
+                    <li>Business/Storefront signs</li>
+                    <li>Hard water</li>
+                    <li>Recurring Maintenance</li>
+                    <li>Paint Removal</li>
+               </ul>
             </article>
         </section>
     </article>

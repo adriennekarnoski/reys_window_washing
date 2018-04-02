@@ -2,30 +2,69 @@
 
 
 {% block content %}
-<section class="page teal services_container">
-
-    <article class="services_content clearfix">
-        <section class="two_even left content">
-            <h2 class="sub_heading">This is a sub heading</h2>
-            <h3 class="heading">Introduction to the business</h3>
+<section class="page white discounts_container">
+    <article class="discounts_content clearfix">
+        <section class="one left text_center">
+            <h1 class="big_heading">Discounts</h1>
         </section>
-        <section class="two_even right white content">
-            <article class="one text_gray">
-                <h3 class="heading">Introduction to the business</h3>
-                one
-            </article>
-            <article class="one text_gray">
-                <h3 class="heading">Introduction to the business</h3>
-                two
-            </article>
-            <article class="one text_gray">
-                <h3 class="heading">Introduction to the business</h3>
-                three
-            </article>
-            <article class="one text_gray">
-                <h3 class="heading">Introduction to the business</h3>
-                four
-            </article>
+        <section class="two_even left content clearfix">
+            <h2 class="sub_heading text_teal">Explore ways to save</h2>
+            <h3 class="heading">Current Available Discounts</h3>
+            <section class="military">
+                <article class="grid_square clearfix">
+                    <h2 class="teal">Military Discount</h2>
+                    <section class="grid_small left">
+                        <i class="flaticon-military icon"></i>
+                    </section>
+                    <section class="grid_big right">
+                        <h3 class="tiny_heading">Save on your next service</h3>
+                        <h4 class="semi_heading">10% Military Discount</h4>
+                        <h5>Applies to veterans and active duty</h5>
+                        <p class="text_teal">* Residential Only</p>
+                    </section>
+                </article>  
+            </section>
+            <section class="one left">
+                <h4 class="semi_heading">Include discounts in your quote</h4>
+                <p>If you are interested in applying a discount, include details in the <span class="text_teal">Additional Information</span> section of your quote request.</p>
+                <a href="{{ url_for('quote') }}" class="button gray">Get your Quote!</a>
+            </section>
+        </section>
+        <section class="two_even right">
+            <article class="referral clearfix light_gray">
+                <article class="one left">
+                    <h2 class="tiny_heading">Refer and save</h2>
+                    <h3 class="semi_heading text_center">Referral Program</h3>
+                    <h5>When you refer...</h5>
+                </article>
+                <section class="two_even left text_center">
+                    <i class="flaticon-avatar icon"></i>
+                </section>
+                <section class="two_even right referral_description">
+                    <h2 class="tiny_heading">one person</h2>
+                    <h4 class="heading">take $25 off</h4>
+                    <p>your next service</p>
+                </section>
+                <section class="two_even left text_center">
+                    <i class="flaticon-social icon"></i>
+                </section>
+                <section class="two_even right referral_description">
+                    <h2 class="tiny_heading">two people</h2>
+                    <h4 class="heading">take $50 off</h4>
+                    <p>your next service</p>
+                </section>
+                <section class="two_even left text_center">
+                    <i class="flaticon-group icon"></i>
+                </section>
+                <section class="two_even right referral_description">
+                    <h2 class="tiny_heading">three or more people</h2>
+                    <h4 class="heading">take $75 off</h4>
+                    <p>your next service</p>
+                </section>
+                <article class="one left">
+                <p class="text_teal">* Referral must book service prior to discount being applied</p>
+                </article>
+            </article>   
         </section>
     </article>
 
