@@ -106,9 +106,9 @@
 .nav_contact {
     position: relative;
     color: #ccc;
-    bottom: -30%;
+    bottom: -20%;
     font-size: 12px;
-    padding-left: 20%;
+    padding-left: 15%;
 }
 
 .nav_contact ul li {
@@ -140,7 +140,7 @@
     text-align: center;
     position: relative;
     width: 100%;
-    bottom: -30%;
+    bottom: -20%;
 }
 
 @media screen and (min-width: 640px) {
@@ -222,7 +222,7 @@
 
 .request_container {
     width: 80%;
-    padding: 3% 10%;
+    padding: 10% 10%;
     text-align: center;
 }
 
@@ -231,7 +231,7 @@
 }
 
 .home_services ul {
-    padding: 5% 0%;
+    padding: 5% 0% 5% 10%;
     margin-top: 5%;
 }
 
@@ -240,6 +240,10 @@
 }
 
 @media screen and (min-width: 640px) {
+    .request_container {
+        padding: 3% 10%;
+    }
+
     .home_services {
         width: 80%;
         padding: 0% 10%;
@@ -315,6 +319,7 @@
 
 .numbers section article {
     padding-bottom: 5%;
+    width: 100%;
 }
 
 @media screen and (min-width: 640px) {
@@ -329,7 +334,10 @@
     }
 
     .numbers section article {
+        display: inline-block;
         padding-bottom: 0%;
+        width: 90%;
+        padding: 0% 5%;
     }
 }
 
@@ -488,7 +496,7 @@
 
 .services {
    border-left: none;
-   margin-top: 5%; 
+   margin: 5% 0%; 
    width: 100%;
    display: inline-block;
 }
@@ -553,6 +561,7 @@
     margin: auto;
     padding: 10% 5%;
     margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .referral section {
@@ -579,10 +588,12 @@
 
     .military {
         width: 90%;
+        margin: 15% 0%;
     }
 
     .referral {
         margin-top: 0%;
+        margin-bottom: 0%;
     }
 
     .referral section {

@@ -35,11 +35,16 @@
     padding-left: 0%;
 }
 
+.introduction h3 {
+    display: inline-block;
+}
+
 .introduction p {
     padding-left: 0%;
     padding-top: 5%;
     font-size: 14px;
     line-height: 18px;
+    text-align: justify;
 }
 
 .introduction p a {
@@ -51,14 +56,27 @@
     .introduction h2, .introduction h3 {
         padding-left: 3%;
     }
+    .introduction h3 {
+        display: inline;
+    }
 
     .introduction p  {
         padding-left: 5%;
+        text-align: left;
     }
 }
 
 .request_container p {
     font-size: 12px;
+    line-height: 18px;
+}
+
+.home_services p {
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    padding-bottom: 3%;
+    font-size: 14px;
     line-height: 18px;
 }
 
@@ -74,11 +92,25 @@
     padding-bottom: 15%;
 }
 
+.process_icons h2 {
+    padding: 10%;
+}
+
 @media screen and (min-width: 640px) {
+    .home_services p {
+        width: 85%;
+        margin: 0%;
+        text-align: justify;
+    }
+
     .process_icons p {
         padding-bottom: 0%;
         font-size: 12px;
         line-height: 16px;
+    }
+
+    .process_icons h2 {
+        padding: 5%;
     }
 }
 
@@ -122,19 +154,26 @@
 .numbers h4 {
     display: inline-block;
     border: solid #68b1ac 2px;
-    padding: 6px 20px;
+    padding: 6px 18px;
     border-radius: 50%;
     margin: 20px 10px;
 }
 
 .numbers h5 {
-    width: 200px;
+    width: 230px;
+    text-align: center;
     display: inline-block;
     font-family: 'Amatic SC';
     font-size: 2em;
     font-weight: bolder;
     padding-top: 4%;
     border-bottom: solid #d9d9d9 3px;
+}
+
+.numbers_description p {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: justify;
 }
 
 .numbers p {
@@ -146,8 +185,12 @@
 }
 
 @media screen and (min-width: 640px) {
+    .numbers h4 {
+        padding: 6px 20px;
+    }
 
     .numbers h5 {
+        text-align: left;
         border-bottom: none;
     }
 
@@ -268,11 +311,19 @@
     padding-top: 4%;
 }
 
+.referral article p {
+    margin-top: 3%;
+}
+
 @media screen and (min-width: 640px) {
     .military i {
         display: inline-block;
         padding-top: 25%;
         padding-left: 10%;
+    }
+
+    .referral article p {
+        margin-top: 0%;
     }
 }
 
@@ -366,7 +417,7 @@ footer h3 {
 .sent_icon i {
     display: inline-block;
     font-size: 7em;
-    padding: 30% 0%;
+    padding: 25% 0%;
 }
 
 @media screen and (min-width: 640px) {
