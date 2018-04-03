@@ -1,0 +1,274 @@
+
+/*layout.css: Controls the flow and structure of pages throughout the site*/
+
+main {
+    padding-top: 100px;
+}
+
+@media screen and (min-width: 640px) {
+    main {
+        padding-top: 0px;
+    }
+}
+
+nav {
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    background: #0e0e0b;
+    color: white;
+    font-family: 'Glegoo', serif;
+}
+
+
+@media screen and (min-width: 640px) {
+    nav {
+        height: 100vh;
+        position: fixed;
+        width: 20%;
+        background: #0e0e0b;
+        color: white;
+        font-family: 'Glegoo', serif;
+    }
+}
+
+footer {
+    width: 80%;
+    padding: 10%;
+    margin-left: 0%;
+    background: #1d1d1d;
+    color: #ccc;
+}
+
+@media screen and (min-width: 640px) {
+    footer {
+        width: 70%;
+        padding: 5%;
+        margin-left: 20%;
+        background: #1d1d1d;
+        color: #ccc;
+    }
+}
+
+/*page classes*/
+
+
+.page {
+    min-height: 100vh;
+    width: 100%;
+    margin-left: 0%;
+    font-family: 'Glegoo', serif;
+}
+
+@media screen and (min-width: 640px) {
+    .page {
+        min-height: 100vh;
+        width: 80%;
+        margin-left: 20%;
+        font-family: 'Glegoo', serif;
+    }
+}
+
+.container {
+    width: 100%;
+}
+
+.small_container {
+    width: 80%;
+    padding: 0% 10%;
+}
+
+.content {
+    width: 80%;
+    margin: auto;
+    padding: 10% 0%;
+}
+
+.padding {
+    padding: 5% 0%;
+}
+
+.small_padding {
+    padding: 1% 0%;
+}
+
+/*container flow*/
+
+
+.one {
+    width: 90%;
+    padding: 0% 5%;
+}
+
+.two_even {
+    width: 90%;
+    padding: 0% 5%;
+}
+
+.two_small {
+    width: 90%;
+    padding: 0% 5%;
+}
+
+.two_big {
+    width: 90%;
+    padding: 0% 5%;
+}
+
+.three {
+    width: 90%;
+    padding: 0% 5%;
+}
+
+.four {
+    width: 90%;
+    padding: 0% 5%;
+}
+
+.five {
+    width: 20%;
+}
+
+@media screen and (min-width: 640px) {
+    .one {
+        width: 90%;
+        margin: auto;
+        padding: 0%;
+    }
+
+    .two_even {
+        width: 50%;
+        padding: 0%;
+    }
+
+    .two_small {
+        width: 30%;
+        padding: 0%;
+    }
+
+    .two_big {
+        width: 70%;
+        padding: 0%;
+    }
+
+    .three {
+        width: 33%;
+        padding: 0%;
+    }
+
+    .four {
+        width: 25%;
+        padding: 0%;
+    }
+
+    .five {
+        width: 20%;
+        padding: 0%;
+    }
+}
+
+/*floats*/
+
+
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.left {
+    float: none;
+}
+
+.right {
+    float: none;
+}
+
+@media screen and (min-width: 640px) {
+    .left {
+        float: left;
+    }
+
+    .right {
+        float: right;
+    }
+}
+
+.desktop_show {
+    display: none;
+}
+
+.mobile_show {
+    display: inline-block;
+}
+
+@media screen and (min-width: 640px) {
+    .desktop_show {
+        display: inline-block;
+    }
+
+    .mobile_show {
+        display: none;
+    }
+}
+
+/*home*/
+
+.home_background {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.grid_square {
+    width: calc(100% - 6px);
+    border: solid #1d1d1d 3px;
+}
+
+.grid_square .grid_small {   
+    display: none;
+}
+
+.grid_square .grid_big {
+    width: 70%;
+    padding: 4% 15% 4% 15%;
+    display: inline-block;
+    border-left: none;
+}
+
+@media screen and (min-width: 640px) {
+    .grid_square .grid_small {
+        width: calc(22% - 3px);
+        padding: 4%;    
+        display: inline-block;
+        border-right: solid #1d1d1d 3px;
+    }
+
+    .grid_square .grid_big {
+        width: 62%;
+        padding: 4%;
+        display: inline-block;
+    }
+}
+
+.grid_square h2 {
+    font-family: 'Amatic SC';
+    font-size: 1.8em;
+    font-weight: bolder;
+    padding: 4% 0%;
+    text-align: center;
+    border-bottom: solid #1d1d1d 3px;
+}
+
+.grid_square h3 {
+    font-size: 0.8em;
+    color: #a6a6a6;
+    text-transform: uppercase;
+}
+
+.yelp {
+    padding-right: 15%;
+    color: #b3b3b3;
+}
+

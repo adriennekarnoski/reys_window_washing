@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<section class="page contact_container">
+    <article class="con_tent clearfix">
+      <section class="text_center">
+        <h1>Contact Us</h1>
+      </section>
+      <section class="two_small left">
+        <h2 class="sub_heading text_teal">Still not sure?</h2>
+        <h3 class="heading">Get in contact</h3>
+        <p>Whether you a question or want more information, send us a message!</p>
+        <ul>
+          <li><i class="fas fa-mobile-alt fa-2x"></i><a href="tel:+1-916-540-8373">916.540.8373</a></li>  
+          <li><i class="far fa-envelope fa-2x"></i>reyswindowwashing@gmail.com</li>
+          <li><i class="far fa-clock fa-2x"></i>Hours of Operation
+            <ul>
+              <li>MON - FRI 8:00AM - 5:00PM</li>
+              <li>SAT - SUN 7:00AM - 5:00PM</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="two_big right">
+        <form method="POST" action="">
+          {{ form.csrf_token }}
+          <span class="full_input">
+          {{ form.name(placeholder="Full Name")}}
+          {{ form.contact(placeholder="Phone Number or Email Address") }}
+          {{ form.message(placeholder="Your message...", class="message_input") }}
+          <input type="submit" value="Send" class="button teal">
+        </form>
+      </section>
+    </article>
+</section>
+{% endblock %}

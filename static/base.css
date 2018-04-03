@@ -1,0 +1,181 @@
+
+/*base.css: Classes to control the general style of elements throughout the site*/
+
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/*background colors*/
+
+.white {
+    background: #f5f5f5;
+}
+
+.teal {
+    background: #356764;
+    color: white;
+}
+
+.gray {
+    background: #1d1d1d;
+    color: white;
+}
+
+.light_gray {
+    background: #d9d9d9;
+}
+
+
+/* buttons */
+
+
+.button, .home_button, .large_button {
+    border: none;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+.button {
+    padding: 15px;
+    width: 150px;
+    font-size: 12px;
+    margin-top: 5%;
+}
+
+.home_button, .large_button {
+    padding: 15px 32px;
+    width: 250px;
+    margin-top: 2%;  
+}
+
+.home_button {
+    font-size: 18px;
+}
+
+.large_button {
+    font-size: 12px;
+}
+
+
+/* headings */
+
+.big_heading, .heading, .semi_heading {
+    font-family: 'Amatic SC'; 
+    font-weight: bolder; 
+}
+
+.big_heading {
+    font-size: 2.8em;
+    display: inline-block;
+    margin: 10% auto;
+    border-bottom: solid #68b1ac 3px;
+}
+
+.heading {
+    font-size: 2em;
+    padding-bottom: 2%;
+}
+
+.sub_heading {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.semi_heading {
+    display: inline-block;
+    font-size: 1.8em;
+}
+
+.tiny_heading {
+    display: block;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 640px) {
+    .big_heading {
+        font-size: 3em;
+    }
+
+    .heading {
+        font-size: 2.3em;
+    }
+
+    .sub_heading {
+        font-size: 1em;
+    }
+
+    .semi_heading {
+        font-size: 2em;
+    }
+
+    .tiny_heading {
+        font-size: 0.8em;
+    }
+}
+
+.text_center {
+    text-align: center;
+}
+
+.text_center_mobile {
+    text-align: center;
+}
+
+@media screen and (min-width: 640px) {
+    .text_center_mobile {
+        text-align: left;
+    }
+}
+
+.text_right {
+    text-align: right;
+}
+
+.text_left {
+    text-align: left;
+}
+
+.text_small {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.text_teal {
+    color: #68b1ac;
+}
+
+.text_gray {
+    color: #1d1d1d;
+}
+
+.text_med_gray {
+    color: #666666;
+}
+
+.text_light_gray {
+    color: #d9d9d9;
+}
+
+p {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+a {
+    text-decoration: none;
+    padding-top: 5%;
+    color: white;
+}
+
+.link {
+    display: block;
+}

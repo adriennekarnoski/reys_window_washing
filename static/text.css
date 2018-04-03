@@ -1,0 +1,431 @@
+
+
+.icon {
+    font-size: 70px;
+}
+
+
+/* home */
+
+
+.home_overlay h1, .home_overlay h2 {
+    font-family: 'Amatic SC';
+    text-transform: uppercase;
+}
+
+.home_overlay h1 {
+    padding-top: 12%;
+    font-size: 4.5em;
+}
+
+.home_overlay h2 {
+    font-size: 4em;
+    font-weight: bolder;
+}
+
+.home_overlay p {
+    width: 60%;
+    margin: auto;
+    padding-top: 2%;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.introduction h2, .introduction h3 {
+    padding-left: 0%;
+}
+
+.introduction h3 {
+    display: inline-block;
+}
+
+.introduction p {
+    padding-left: 0%;
+    padding-top: 5%;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: justify;
+}
+
+.introduction p a {
+    display: block;
+    padding-top: 0%;
+}
+
+@media screen and (min-width: 640px) {
+    .introduction h2, .introduction h3 {
+        padding-left: 3%;
+    }
+    .introduction h3 {
+        display: inline;
+    }
+
+    .introduction p  {
+        padding-left: 5%;
+        text-align: left;
+    }
+}
+
+.request_container p {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.home_services p {
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+    padding-bottom: 3%;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.home_services .fa-lg {
+    padding: 0% 3%;
+    color: #68b1ac;
+}
+
+.process_icons p {
+    width: 80%;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 15%;
+}
+
+.process_icons h2 {
+    padding: 10%;
+}
+
+@media screen and (min-width: 640px) {
+    .home_services p {
+        width: 85%;
+        margin: 0%;
+        text-align: justify;
+    }
+
+    .process_icons p {
+        padding-bottom: 0%;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .process_icons h2 {
+        padding: 5%;
+    }
+}
+
+.flaticon-broom {
+    display: none;
+}
+
+@media screen and (min-width: 640px) {
+    .flaticon-broom {
+        display: block;
+        padding-right: 25%;
+    }
+}
+
+.building_right h2, .building_left h2 {
+    display: block;
+    font-family: 'Amatic SC';
+    font-size: 2em;
+    font-weight: bolder;
+    border-bottom: solid 3px #68b1ac;
+    margin-bottom: 10px;
+}
+
+.building_right i, .building_left i {
+    width: 100px;
+    display: inline-block; 
+    margin-right: 20px;
+    padding: 5% 0%;
+}
+
+@media screen and (min-width: 640px) {
+    .building_right h2, .building_left h2 {
+        display: inline-block;
+    }
+
+    .building_right i, .building_left i {
+        margin-bottom: 10px;
+    }
+}
+
+.numbers h4 {
+    display: inline-block;
+    border: solid #68b1ac 2px;
+    padding: 6px 18px;
+    border-radius: 50%;
+    margin: 20px 10px;
+}
+
+.numbers h5 {
+    width: 230px;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Amatic SC';
+    font-size: 2em;
+    font-weight: bolder;
+    padding-top: 4%;
+    border-bottom: solid #d9d9d9 3px;
+}
+
+.numbers_description p {
+    font-size: 14px;
+    line-height: 18px;
+    /*text-align: center;*/
+}
+
+.numbers p {
+    text-align: center;
+}
+
+.numbers a {
+    margin-bottom: 5%;
+}
+
+@media screen and (min-width: 640px) {
+    .numbers h4 {
+        padding: 6px 20px;
+    }
+
+    .numbers h5 {
+        text-align: left;
+        border-bottom: none;
+    }
+
+    .numbers p {
+        text-align: left;
+    }
+}
+
+.home_message h2 {
+    margin-top: 5%;
+    font-weight: bolder;
+}
+
+.home_message li .fa-lg {
+    width: 50px;
+    color: #1d1d1d;
+}
+
+.home_message h2, .home_message h3, .home_message p {
+    padding-left: 0%;
+}
+
+@media screen and (min-width: 640px) {
+    .home_message h2, .home_message h3, .home_message p, .home_message ul {
+        padding-left: 20%;
+    }
+}
+
+
+/*about*/
+
+.about_description h1 {
+    font-family: 'Amatic SC'; 
+    font-weight: bolder; 
+    font-size: 2.5em;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 5%;
+    border-bottom: solid #68b1ac 3px;
+}
+
+.about_description p {
+    line-height: 16px;
+}
+
+@media screen and (min-width: 640px) {
+    .about_description h1 {
+        margin-bottom: 15%;
+    }
+
+    .about_description p {
+        line-height: 18px;
+    }
+}
+
+
+/*services*/
+
+
+.services_content h2 {
+    color: #999999;
+}
+
+.services_content p {
+    padding: 2% 5% 2% 0%;
+    font-size: 12px;
+}
+
+.services article i {
+    display: inline-block;
+    border: solid #d9d9d9 3px;
+    border-radius: 50%;
+    width: 110px;
+    height: 100px;
+    padding: 10% 5% 2% 5%;
+    margin: 10% 0%;
+}
+
+.services_content .fa-lg {
+    display: inline-block;
+    width: 50px;
+}
+
+@media screen and (min-width: 640px) {
+    .services article i {
+        padding: 15% 5% 2% 5%;
+        margin-top: 0%;
+    }
+}
+
+
+/*discounts*/
+
+.military i {
+    display: inline-block;
+    padding-top: 0%;
+    padding-bottom: 25%;
+    padding-left: 10%;
+}
+
+.grid_big p, .referral article p, .referral section p {
+    font-size: 12px;
+}
+
+.grid_big h5 {
+    padding: 4% 0%;
+}
+
+.referral h2 {
+    color: #666666;
+}
+
+.referral h3, .referral section h2, .referral h5 {
+    padding-bottom: 4%;
+}
+
+.referral section p {
+    padding-top: 4%;
+}
+
+.referral article p {
+    margin-top: 3%;
+}
+
+@media screen and (min-width: 640px) {
+    .military i {
+        display: inline-block;
+        padding-top: 25%;
+        padding-left: 10%;
+    }
+
+    .referral article p {
+        margin-top: 0%;
+    }
+}
+
+/*contact*/
+
+
+.con_tent h1 {
+    font-family: 'Amatic SC';
+    font-size: 3em;
+    font-weight: bolder;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 10%;
+    border-bottom: solid #68b1ac 3px;
+}
+
+.con_tent p {
+    padding-bottom: 5%;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.con_tent .fa-2x {
+    margin-bottom: -3%;
+    color: #999999;
+    width: 50px;
+}
+
+@media screen and (min-width: 640px) {
+    .con_tent h1 {
+        margin-bottom: 3%;
+    }
+}
+
+
+/*quote*/
+
+
+.quote_container h4 {
+    padding-top: 3%;
+    width: 95%;
+    margin-bottom: 1%;
+    border-bottom: solid #68b1ac 3px;
+}
+
+@media screen and (min-width: 640px) {
+    .quote_container h4 {
+        width: 90%;
+    }
+}
+
+
+/*footer*/
+
+
+
+footer p {
+    width: 100%;
+    font-family: 'Glegoo', serif;
+    font-size: 12px;
+    padding-bottom: 5%;
+}
+
+footer h3 {
+    font-family: 'Amatic SC';
+    font-size: 24px;
+}
+
+.created_by a {
+    color: #68b1ac;
+}
+
+@media screen and (min-width: 640px) {
+    footer p {
+        width: 80%;
+    }
+}
+
+
+/*sent*/
+
+.sent_content h1 {
+    font-family: 'Amatic SC';
+    font-size: 3em;
+    font-weight: bolder;
+    display: inline-block;
+    margin: auto;
+    border-bottom: solid #68b1ac 3px;
+}
+
+.sent_icon i {
+    display: inline-block;
+    font-size: 7em;
+    padding: 25% 0%;
+}
+
+@media screen and (min-width: 640px) {
+    .sent_content h1 {
+        font-size: 4em;    
+    }
+
+    .sent_icon i {
+        padding: 20% 0%;
+    }
+}

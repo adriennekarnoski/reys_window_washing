@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Window Washing">
+  <meta name="author" content="Adrienne Karnoski">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>Rey's Window Washing</title>
+
+
+  <link href="{{url_for('static', filename='reset.css')}}" rel="stylesheet" type="text/css">
+  <link href="{{url_for('static', filename='base.css')}}" rel="stylesheet" type="text/css">
+  <link href="{{url_for('static', filename='layout.css')}}" rel="stylesheet" type="text/css">
+  <link href="{{url_for('static', filename='modules.css')}}" rel="stylesheet" type="text/css">
+  <link href="{{url_for('static', filename='text.css')}}" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='flaticon.css')}}">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Glegoo" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kreon" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+</head>
+<body>
+  <nav>
+    <span class="nav_mobile clearfix">
+      <i class="fas fa-times fa-4x" id="mobile_close"></i>
+      <ul class="nav_list">
+        <li><a href="{{ url_for('home') }}" id="mobile_home">HOME</a></li>
+        <li><a href="{{ url_for('about') }}" id="mobile_about">ABOUT REY</a></li>
+        <li><a href="{{ url_for('services') }}" id="mobile_services">SERVICES</a></li>
+        <li><a href="{{ url_for('discounts') }}" id="mobile_discounts">DISCOUNTS</a></li>
+        <li><a href="{{ url_for('quote') }}" id="mobile_quote">REQUEST A QUOTE</a></li>
+        <li><a href="{{ url_for('contact') }}" id="mobile_contact">CONTACT</a></li>
+      </ul>
+      <ul class="nav_icons">
+        <li><a href="https://www.facebook.com/ReysWindowWashing/" class="icon_span">
+          <i class="fab fa-facebook-square fa-2x">
+          </i></a></li>
+        <li><a href="https://www.instagram.com/reyswindowwashing/" class="icon_span">
+            <i class="fab fa-instagram fa-2x">
+            </i></a></li>
+        <li><a href="mailto:reyswindowwashing@gmail.com" class="icon_span">
+            <i class="far fa-envelope-open fa-2x">
+            </i></a></li>   
+      </ul>
+      <ul class="nav_contact">
+        <li><span class="icon_span"><i class="fas fa-mobile-alt"></i></span><a href="tel:+1-916-540-8373">916.540.8373</a></li>  
+        <li><span class="icon_span"><i class="far fa-envelope"></i></span>reyswindowwashing@gmail.com</li>
+        <li><span class="icon_span"><i class="far fa-clock"></i></span>Hours of Operation
+            <ul>
+              <li>MON - FRI 8:00AM - 5:00PM</li>
+              <li>SAT - SUN 7:00AM - 5:00PM</li>
+            </ul>
+          </li>
+      </ul>
+   </span>
+    <img src="/static/logo.png" class="logo">
+    <i class="fas fa-bars fa-4x" id="mobile_open"></i>
+
+    <span class="nav_desktop">
+      <ul class="nav_list">
+          <li><a href="{{ url_for('home') }}" id="home">HOME</a></li>
+          <li><a href="{{ url_for('about') }}" id="about">ABOUT REY</a></li>
+          <li><a href="{{ url_for('services') }}" id="services">SERVICES</a></li>
+          <li><a href="{{ url_for('discounts') }}" id="discounts">DISCOUNTS</a></li>
+          <li><a href="{{ url_for('quote') }}" id="quote">REQUEST A QUOTE</a></li>
+          <li><a href="{{ url_for('contact') }}" id="contact">CONTACT</a></li>
+        </ul>
+        <ul class="nav_icons">
+          <li><a href="https://www.facebook.com/ReysWindowWashing/" class="icon_span">
+            <i class="fab fa-facebook-square fa-2x">
+            </i></a></li>
+          <li><a href="https://www.instagram.com/reyswindowwashing/" class="icon_span">
+              <i class="fab fa-instagram fa-2x">
+              </i></a></li>
+          <li><a href="mailto:reyswindowwashing@gmail.com" class="icon_span">
+              <i class="far fa-envelope-open fa-2x">
+              </i></a></li>   
+        </ul>
+        <ul class="nav_contact">
+          <li><span class="icon_span"><i class="fas fa-mobile-alt"></i></span><a href="tel:+1-916-540-8373">916.540.8373</a></li>  
+          <li><span class="icon_span"><i class="far fa-envelope"></i></span>reyswindowwashing@gmail.com</li>
+          <li><span class="icon_span"><i class="far fa-clock"></i></span>Hours of Operation
+            <ul>
+              <li>MON - FRI 8:00AM - 5:00PM</li>
+              <li>SAT - SUN 7:00AM - 5:00PM</li>
+            </ul>
+          </li>
+        </ul>
+    </span>
+  </nav>
+  <main>
+    {% block content %} {% endblock %}
+  </main>
+  <footer>
+    <section class="container clearfix">
+      <article class="two_big left">
+        <h3>Rey's Window Washing</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum purus nibh, ac varius lorem iaculis consectetur. Proin eu arcu sollicitudin,</p>
+      </article>
+      <article class="two_small right"> 
+        <ul class="foot_contact">
+          <li><span class="icon_span"><i class="fas fa-mobile-alt"></i></span><a href="tel:+1-916-540-8373">916.540.8373</a></li>  
+          <li><span class="icon_span"><i class="far fa-envelope"></i></span>reyswindowwashing@gmail.com</li>
+          <li><span class="icon_span"><i class="fab fa-facebook-square"></i></span>facebook.com/ReysWindowWashing/</li>  
+          <li><span class="icon_span"><i class="fab fa-instagram"></i></span>@ReysWindowWashing</li>
+          <li><span class="icon_span"><i class="far fa-clock"></i></span>Hours of Operation
+            <ul>
+              <li>Monday - Friday 8:00AM - 5:00PM</li>
+              <li>Saturday - Sunday 7:00AM - 5:00PM</li>
+            </ul>
+            </li>
+        </ul>
+      </article>
+    </section>
+    <section class="container clearfix">
+      <article class="created_by">
+        <h4>Website created by <a href="adriennekarnoski.com">Adrienne Karnoski</a></h4>
+      </article>
+    </section>
+  </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script src="{{url_for('static', filename='app.js')}}"></script>
+
+</body>
+</html>
