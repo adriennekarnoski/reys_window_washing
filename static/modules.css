@@ -312,6 +312,10 @@
     padding: 3% 0% 10% 0%;
 }
 
+.numbers_description {
+    text-align: center;
+}
+
 .numbers section {
     width: 100%;
     padding-left: 0%;
@@ -326,6 +330,10 @@
     .numbers_container {
         width: 90%;
         padding: 3% 5% 10% 5%;
+    }
+    .numbers_description {
+        margin-right: -10%;
+        text-align: justify;
     }
 
     .numbers section {
@@ -508,6 +516,7 @@
     height: auto;
     margin: 0px 3px;
     text-align: center;
+    margin-left: 0%;
 }
 
 @media screen and (min-width: 640px) {

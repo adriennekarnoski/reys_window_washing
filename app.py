@@ -1,15 +1,20 @@
 from flask import Flask, render_template, request, redirect, url_for
 from forms import ContactForm, QuoteForm
+from flask_mail import Mail, Message
 import os
 
+mail = Mail()
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY')
 
-app.config["MAIL_SERVER"] = os.environ.get('MAIL_SERVER')
-app.config["MAIL_PORT"] = os.environ.get('MAIL_PORT')
-app.config["MAIL_USE_SSL"] = os.environ.get('MAIL_USE_SSL')
+app.config["MAIL_SERVER"] = "smtp.gmail.com"
+app.config["MAIL_PORT"] = 465
+app.config["MAIL_USE_SSL"] = True
 app.config["MAIL_USERNAME"] = os.environ.get('MAIL_USERNAME')
 app.config["MAIL_PASSWORD"] = os.environ.get('MAIL_PASSWORD')
+
+
+mail.init_app(app)
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -55,8 +60,25 @@ def quote():
 def contact():
     form = ContactForm()
     if request.method == 'POST':
-        if form.validate():
-            return redirect(url_for('success'))
+        if form.validate_on_submit():
+            sender = request.form['name']
+            msg = Message(
+                '{} has sent you a message'.format(sender),
+                sender=os.environ.get('MAIL_SENDER'),
+                recipients=[os.environ.get('MAIL_USERNAME')])
+            msg.body = """
+            Name: {}
+            Email: {}
+
+
+            Message: {}
+
+            """.format(
+                request.form['name'],
+                request.form['contact'],
+                request.form['message'])
+            mail.send(msg)
+            return render_template('success.html', sender=sender)
     return render_template('contact.html', form=form)
 
 
