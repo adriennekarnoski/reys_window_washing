@@ -21,8 +21,25 @@ mail.init_app(app)
 def home():
     form = ContactForm()
     if request.method == 'POST':
-        if form.validate():
-            return redirect(url_for('done'))
+        if form.validate_on_submit():
+            sender = request.form['name']
+            msg = Message(
+                '{} has sent you a message'.format(sender),
+                sender=os.environ.get('MAIL_SENDER'),
+                recipients=[os.environ.get('MAIL_USERNAME')])
+            msg.body = """
+            Name: {}
+            Contact Information: {}
+
+
+            Message: {}
+
+            """.format(
+                request.form['name'],
+                request.form['contact'],
+                request.form['message'])
+            mail.send(msg)
+            return render_template('success.html', sender=sender)
     return render_template('home.html', form=form)
 
 
@@ -43,17 +60,40 @@ def discounts():
 
 @app.route('/quote', methods=['GET', 'POST'])
 def quote():
-    quote_form = QuoteForm()
-    contact_form = ContactForm()
-    if request.method == 'POST':
-        if contact_form.validate():
-            return redirect(url_for('success'))
-        elif quote_form.validate():
-            return redirect(url_for('success'))
+    form = QuoteForm()
+    if form.validate_on_submit():
+        sender = request.form['name']
+        msg = Message(
+            '{} has requested a quote'.format(sender),
+            sender=os.environ.get('MAIL_SENDER'),
+            recipients=[os.environ.get('MAIL_USERNAME')])
+        if request.form['message']:
+            message = request.form['message']
+        else:
+            message = 'None'
+        msg.body = """
+        Name: {}
+        Contact Information: {}
+
+        Company Name: {}
+        City: {}
+        Number of Floors: {}
+        Building Type: {}
+
+        Message: {}
+
+        """.format(
+            request.form['name'],
+            request.form['contact'],
+            request.form['company'],
+            request.form['location'],
+            request.form['floors'],
+            request.form['building'],
+            message)
+        mail.send(msg)
+        return render_template('success.html', sender=sender)
     return render_template(
-        'quote.html',
-        quote_form=quote_form,
-        contact_form=contact_form)
+        'quote.html', form=form)
 
 
 @app.route('/contact', methods=['GET', 'POST'])
@@ -68,7 +108,7 @@ def contact():
                 recipients=[os.environ.get('MAIL_USERNAME')])
             msg.body = """
             Name: {}
-            Email: {}
+            Contact Information: {}
 
 
             Message: {}
